@@ -1,0 +1,1176 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="Brief de la sección Estilo de Vida de Bloomberg Línea: impacto de las propuestas de SEO desde el 20 de agosto de 2026 y qué rinde, qué publicar y qué dejar de publicar hasta febrero de 2027.">
+<title>Qué rinde en Estilo de Vida</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap">
+<style>
+  /* Identidad Bloomberg Línea: negro, blanco y el verde de «Línea» (#36BF58); titulares en grotesca tipo Neue Haas, texto en Lora */
+  :root {
+    color-scheme: light;
+    --bg: #FFFFFF;
+    --surface: #FFFFFF;
+    --ink: #191919;
+    --ink-2: #3D3D3D;
+    --muted: #6B6B6B;
+    --rule: #DADADA;
+    --rule-strong: #BDBDBD;
+    --neutral-bg: #F4F4F4;
+    --accent: #36BF58;
+    --accent-ink: #15803D;
+    --accent-track: #E3F4E7;
+    --notes-bar: #191919;
+    --c-prop: #36BF58;
+    --c-rev: #0F6B34;
+    --c-rest: #D0D0D0;
+    --good: #15803D;
+    --good-bg: #E8F6EC;
+    --warn: #A15300;
+    --warn-bg: #FFF1E0;
+    --bad: #C0341F;
+    --bad-bg: #FDECE8;
+    --bar-bg: #000000;
+    --bar-ink: #FFFFFF;
+    --bar-muted: #BDBDBD;
+    --bar-accent: #36BF58;
+    --bar-rule: #2A2A2A;
+    --sans: "Neue Haas Grotesk Display Pro", "neue-haas-grotesk-display", "Helvetica Neue", "Inter Tight", Helvetica, Arial, sans-serif;
+    --serif: "Lora", Georgia, "Times New Roman", serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --bg: #0A0A0A;
+      --surface: #141414;
+      --ink: #F2F2F2;
+      --ink-2: #CFCFCF;
+      --muted: #9A9A9A;
+      --rule: #2A2A2A;
+      --rule-strong: #4A4A4A;
+      --neutral-bg: #1C1C1C;
+      --accent: #30AF50;
+      --accent-ink: #4CD472;
+      --accent-track: #13261A;
+      --notes-bar: #CFCFCF;
+      --c-prop: #30AF50;
+      --c-rev: #14773A;
+      --c-rest: #3A3A3A;
+      --good: #4CD472;
+      --good-bg: #0F2A18;
+      --warn: #FFB060;
+      --warn-bg: #2E2110;
+      --bad: #FF7A66;
+      --bad-bg: #2E1512;
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --bg: #0A0A0A;
+    --surface: #141414;
+    --ink: #F2F2F2;
+    --ink-2: #CFCFCF;
+    --muted: #9A9A9A;
+    --rule: #2A2A2A;
+    --rule-strong: #4A4A4A;
+    --neutral-bg: #1C1C1C;
+    --accent: #30AF50;
+    --accent-ink: #4CD472;
+    --accent-track: #13261A;
+    --notes-bar: #CFCFCF;
+    --c-prop: #30AF50;
+    --c-rev: #14773A;
+    --c-rest: #3A3A3A;
+    --good: #4CD472;
+    --good-bg: #0F2A18;
+    --warn: #FFB060;
+    --warn-bg: #2E2110;
+    --bad: #FF7A66;
+    --bad-bg: #2E1512;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--serif);
+    font-size: 17px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  .page {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-inline: clamp(16px, 4vw, 44px);
+    padding-block: clamp(28px, 5vw, 56px) 72px;
+  }
+  a { color: var(--accent-ink); text-underline-offset: 3px; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+  p { margin: 0; max-width: 68ch; }
+  strong { font-weight: 600; color: var(--ink); }
+
+  /* Masthead */
+  .mast {
+    display: grid;
+    grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+    gap: clamp(24px, 5vw, 64px);
+    align-items: end;
+  }
+  .kicker {
+    font: 600 12px/1.2 var(--sans);
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent-ink);
+    margin-bottom: 16px;
+  }
+  h1 {
+    font-family: var(--sans);
+    font-weight: 780;
+    font-size: clamp(44px, 7vw, 76px);
+    line-height: 0.92;
+    letter-spacing: -0.01em;
+    margin: 0 0 20px;
+    text-wrap: balance;
+  }
+  .lede {
+    font-size: clamp(18px, 2vw, 20.5px);
+    line-height: 1.5;
+    color: var(--ink-2);
+    max-width: 46ch;
+  }
+  .spec {
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    border-top: 2px solid var(--ink);
+  }
+  .spec > div { padding: 12px 0; border-bottom: 1px solid var(--rule); }
+  .spec > div:nth-child(odd) { padding-right: 18px; }
+  .spec dt {
+    font: 600 11px/1.3 var(--sans);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  .spec dd { margin: 5px 0 0; font: 650 21px/1.15 var(--sans); color: var(--ink); }
+  .spec dd small { display: block; margin-top: 3px; font: 400 13px/1.35 var(--sans); color: var(--muted); }
+  .bezel {
+    height: 14px;
+    margin-top: 26px;
+    background:
+      repeating-linear-gradient(90deg, var(--accent) 0 2px, transparent 2px 60px) left bottom / 100% 14px no-repeat,
+      repeating-linear-gradient(90deg, var(--rule-strong) 0 1px, transparent 1px 12px) left bottom / 100% 7px no-repeat;
+  }
+
+  /* Sections */
+  section { margin-top: clamp(48px, 7vw, 76px); }
+  .sec-head { display: grid; gap: 10px; margin-bottom: 22px; }
+  .eyebrow {
+    font: 600 11.5px/1.2 var(--sans);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  h2 {
+    font-family: var(--sans);
+    font-weight: 740;
+    font-size: clamp(28px, 3.6vw, 38px);
+    line-height: 1.02;
+    margin: 0;
+    text-wrap: balance;
+    max-width: 24ch;
+  }
+  .sec-head p { color: var(--ink-2); }
+  .stack { display: grid; gap: 14px; }
+  .note { font: 400 14px/1.5 var(--sans); color: var(--muted); max-width: 90ch; margin-top: 14px; }
+
+  /* Tables */
+  .table-wrap { overflow-x: auto; border-top: 2px solid var(--ink); }
+  table { width: 100%; border-collapse: collapse; font-family: var(--sans); font-size: 14.5px; }
+  .t-topics { min-width: 900px; }
+  .t-hooks { min-width: 680px; }
+  .t-mix { min-width: 760px; }
+  .t-ever { min-width: 760px; }
+  .t-gsc { min-width: 720px; }
+  thead th {
+    font: 600 11px/1.3 var(--sans);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+    text-align: left;
+    padding: 12px 14px 10px 0;
+    border-bottom: 1px solid var(--rule-strong);
+    vertical-align: bottom;
+  }
+  tbody th, tbody td {
+    padding: 13px 14px 13px 0;
+    border-bottom: 1px solid var(--rule);
+    text-align: left;
+    vertical-align: middle;
+  }
+  tbody th { font-weight: 650; color: var(--ink); }
+  tbody th .how { display: block; margin-top: 3px; font: 400 13.5px/1.4 var(--serif); color: var(--muted); max-width: 42ch; }
+  th.num, td.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  td.chan { color: var(--ink-2); white-space: nowrap; }
+  td.idx { color: var(--ink-2); white-space: nowrap; font-variant-numeric: tabular-nums; }
+  td.idx b { font-weight: 650; color: var(--ink); }
+  .star { color: var(--muted); font-weight: 400; }
+  tr.ref-row th, tr.ref-row td { color: var(--muted); background: var(--neutral-bg); }
+  tr.ref-row th { padding-left: 10px; }
+  .title-cell { font-weight: 500; color: var(--ink); max-width: 46ch; }
+
+  .barline { display: grid; grid-template-columns: minmax(140px, 1fr) 54px; align-items: center; gap: 10px; }
+  .bar { position: relative; height: 12px; background: var(--accent-track); }
+  .bar .fill { position: absolute; inset: 0 auto 0 0; width: var(--w); background: var(--accent); border-radius: 0 4px 4px 0; }
+  .bar .mid { position: absolute; left: var(--mid); top: -5px; bottom: -5px; width: 1px; background: var(--ink); }
+  .barline .val { font-variant-numeric: tabular-nums; text-align: right; font-weight: 600; }
+  .pair { display: grid; gap: 5px; }
+  .pair .row { display: grid; grid-template-columns: minmax(140px, 1fr) 48px; align-items: center; gap: 10px; }
+  .pair .b { height: 9px; background: transparent; position: relative; }
+  .pair .b span { position: absolute; inset: 0 auto 0 0; width: var(--w); border-radius: 0 4px 4px 0; }
+  .pair .notes span { background: var(--notes-bar); }
+  .pair .views span { background: var(--accent); }
+  .pair .v { font-variant-numeric: tabular-nums; text-align: right; font-size: 13px; color: var(--ink-2); }
+  .legend { display: flex; flex-wrap: wrap; gap: 8px 22px; font: 500 13px/1.3 var(--sans); color: var(--ink-2); margin-bottom: 12px; }
+  .legend span { display: inline-flex; align-items: center; gap: 8px; }
+  .legend i { display: inline-block; width: 18px; height: 9px; border-radius: 0 3px 3px 0; }
+  .legend .k-notes { background: var(--notes-bar); }
+  .legend .k-views { background: var(--accent); }
+  .legend .k-mid { width: 1px; height: 14px; background: var(--ink); border-radius: 0; }
+
+  /* Verdict chips */
+  .chip {
+    display: inline-flex; align-items: center; gap: 6px;
+    font: 650 12.5px/1 var(--sans);
+    padding: 6px 10px 6px 8px;
+    border-radius: 999px;
+    white-space: nowrap;
+  }
+  .chip svg { width: 9px; height: 9px; fill: currentColor; flex: none; }
+  .chip.up { color: var(--good); background: var(--good-bg); }
+  .chip.keep { color: var(--warn); background: var(--warn-bg); }
+  .chip.down { color: var(--bad); background: var(--bad-bg); }
+  .chip.flat { color: var(--ink-2); background: var(--neutral-bg); }
+
+  /* Title molds */
+  .molds { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin-top: 26px; }
+  .mold {
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: 6px;
+    padding: 18px 20px 16px;
+    display: grid;
+    gap: 12px;
+    align-content: start;
+  }
+  .mold h3 { margin: 0; font: 650 12px/1.2 var(--sans); letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); }
+  .formula { font: 620 18px/1.35 var(--sans); color: var(--ink); text-wrap: balance; }
+  .formula b { font-weight: 620; color: var(--accent-ink); }
+  .mold ul { margin: 0; padding: 12px 0 0; list-style: none; display: grid; gap: 9px; border-top: 1px solid var(--rule); }
+  .mold li { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 14px; align-items: baseline; font-size: 15px; line-height: 1.45; color: var(--ink-2); }
+  .mold li .v { font: 600 13px/1 var(--sans); font-variant-numeric: tabular-nums; color: var(--ink); white-space: nowrap; }
+
+  /* Two-list plan */
+  .plan { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin-top: 22px; }
+  .plan > div { border-top: 2px solid var(--ink); padding-top: 12px; display: grid; gap: 10px; align-content: start; }
+  .plan h3 { margin: 0; font: 700 15px/1.2 var(--sans); display: flex; align-items: center; gap: 8px; }
+  .plan ul { margin: 0; padding-left: 18px; display: grid; gap: 8px; }
+  .plan li { font-size: 15.5px; line-height: 1.5; color: var(--ink-2); }
+  .plan li::marker { color: var(--muted); }
+
+  /* Calendar */
+  .cal { list-style: none; margin: 0; padding: 0; border-top: 2px solid var(--ink); }
+  .cal li {
+    display: grid;
+    grid-template-columns: 128px minmax(0, 1fr) 210px;
+    gap: 22px;
+    padding: 18px 0;
+    border-bottom: 1px solid var(--rule);
+  }
+  .when { font: 740 16px/1.15 var(--sans); text-transform: uppercase; letter-spacing: 0.02em; color: var(--ink); }
+  .when small { display: block; margin-top: 5px; font: 400 12.5px/1.3 var(--sans); text-transform: none; letter-spacing: 0; color: var(--muted); }
+  .what h3 { margin: 0 0 4px; font: 650 17px/1.3 var(--sans); text-wrap: balance; }
+  .what p { font-size: 15.5px; line-height: 1.5; color: var(--ink-2); }
+  .what .pitch { font-style: italic; color: var(--ink); margin-top: 6px; }
+  .bench { font: 400 13px/1.45 var(--sans); color: var(--muted); display: grid; gap: 6px; align-content: start; }
+  .bench b { font-weight: 650; color: var(--ink); font-variant-numeric: tabular-nums; }
+  .prio { display: inline-flex; align-items: center; gap: 7px; font: 650 12.5px/1 var(--sans); color: var(--ink); }
+  .prio svg { width: 11px; height: 11px; flex: none; }
+
+  /* Stop list */
+  .stop { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 32px; border-top: 2px solid var(--ink); }
+  .stop li { padding: 14px 0; border-bottom: 1px solid var(--rule); display: grid; gap: 4px; }
+  .stop h3 { margin: 0; font: 650 16px/1.3 var(--sans); }
+  .stop p { font-size: 15px; line-height: 1.5; color: var(--ink-2); }
+
+  footer { margin-top: 64px; padding-top: 16px; border-top: 1px solid var(--rule-strong); display: grid; gap: 8px; }
+  footer p { font: 400 13px/1.55 var(--sans); color: var(--muted); max-width: 100ch; }
+
+  @media (max-width: 820px) {
+    .mast { grid-template-columns: minmax(0, 1fr); }
+    .molds, .plan, .stop { grid-template-columns: minmax(0, 1fr); }
+    .cal li { grid-template-columns: minmax(0, 1fr); gap: 8px; }
+  }
+
+  /* Barra de Bloomberg Línea y tipografía de la casa */
+  .bl-bar { background: var(--bar-bg); color: var(--bar-ink); border-bottom: 1px solid var(--bar-rule); }
+  .bl-bar-in { max-width: 1100px; margin: 0 auto; padding-inline: clamp(16px, 4vw, 44px); }
+  .bl-top { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px 20px; padding-block: 16px 14px; }
+  .bl-mark { font: 700 clamp(22px, 2.8vw, 30px)/1 var(--sans); letter-spacing: -0.025em; color: var(--bar-ink); white-space: nowrap; }
+  .bl-mark span { color: var(--bar-accent); }
+  .bl-tag { font: 600 11.5px/1.3 var(--sans); letter-spacing: 0.08em; text-transform: uppercase; color: var(--bar-muted); }
+  .bl-nav { display: flex; gap: 24px; overflow-x: auto; padding-block: 11px 12px; border-top: 1px solid var(--bar-rule); scrollbar-width: none; }
+  .bl-nav::-webkit-scrollbar { display: none; }
+  .bl-nav a { color: var(--bar-ink); text-decoration: none; font: 500 14px/1.2 var(--sans); white-space: nowrap; }
+  .bl-nav a:hover { color: var(--bar-accent); }
+  .bl-nav a:focus-visible { outline: 2px solid var(--bar-accent); outline-offset: 3px; border-radius: 2px; }
+  .kicker, .eyebrow { font: 700 12px/1.2 var(--sans); letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent-ink); }
+  h1 { font-family: var(--sans); font-weight: 600; font-size: clamp(34px, 5vw, 54px); line-height: 1.04; letter-spacing: -0.015em; color: var(--ink); max-width: 22ch; }
+  h2 { font-family: var(--sans); font-weight: 600; font-size: clamp(24px, 2.8vw, 32px); line-height: 1.1; letter-spacing: -0.01em; color: var(--ink); }
+  .lede { font-family: var(--sans); font-size: clamp(18px, 1.9vw, 21px); line-height: 1.45; color: var(--ink-2); }
+  .byline { margin-top: 16px; font: 400 14px/1.4 var(--sans); color: var(--muted); max-width: none; }
+  .byline b { font-weight: 700; color: var(--ink); }
+  .bezel { height: 4px; margin-top: 28px; background: linear-gradient(90deg, var(--accent) 0 88px, var(--ink) 88px 100%); }
+
+  /* Impacto de las propuestas (acotado a .imp) */
+  .imp .tiles { margin: 30px 0 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border-top: 2px solid var(--ink); }
+  .imp .tiles > div { padding: 14px 18px 14px 0; border-bottom: 1px solid var(--rule); }
+  .imp .tiles dt { font: 600 11px/1.3 var(--sans); letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); }
+  .imp .tiles dd { margin: 6px 0 0; font: 700 30px/1.05 var(--sans); font-variant-numeric: tabular-nums; color: var(--ink); }
+  .imp .tiles dd small { display: block; margin-top: 5px; font: 400 13px/1.4 var(--sans); color: var(--muted); }
+  /* Chart */
+  .imp .legend { display: flex; flex-wrap: wrap; gap: 8px 22px; font: 500 13px/1.3 var(--sans); color: var(--ink-2); margin-bottom: 12px; }
+  .imp .legend span { display: inline-flex; align-items: center; gap: 8px; }
+  .imp .legend i { display: inline-block; width: 14px; height: 14px; border-radius: 3px; }
+  .imp .legend .k-prop { background: var(--c-prop); }
+  .imp .legend .k-rev { background: var(--c-rev); }
+  .imp .legend .k-rest { background: var(--c-rest); }
+  .imp .legend .k-ma { width: 18px; height: 2px; background: var(--ink); border-radius: 0; }
+  .imp .chart-card { background: var(--surface); border: 1px solid var(--rule); border-radius: 6px; padding: 14px 10px 8px; position: relative; }
+  .imp #chart { position: relative; width: 100%; min-height: 300px; touch-action: pan-y; }
+  .imp #chart svg { display: block; overflow: visible; }
+  .imp #chart .tick { font: 500 11.5px var(--sans); fill: var(--muted); font-variant-numeric: tabular-nums; }
+  .imp #chart .evnum { font: 700 11px var(--sans); fill: var(--ink); }
+  .imp #chart .anno { font: 500 11.5px var(--sans); fill: var(--muted); }
+  .imp .tip { position: absolute; top: 0; left: 0; pointer-events: none; background: var(--surface); border: 1px solid var(--rule-strong); border-radius: 6px; padding: 9px 11px; font: 400 12.5px/1.45 var(--sans); color: var(--ink-2); box-shadow: 0 6px 18px rgba(0,0,0,.12); min-width: 190px; }
+  .imp .tip[hidden] { display: none; }
+  .imp .tip b { color: var(--ink); font-weight: 650; }
+  .imp .tip .row { display: grid; grid-template-columns: 12px 1fr auto; gap: 8px; align-items: center; font-variant-numeric: tabular-nums; }
+  .imp .tip .row i { width: 10px; height: 10px; border-radius: 2px; display: inline-block; }
+  .imp .tip .tot { border-top: 1px solid var(--rule); margin-top: 5px; padding-top: 5px; }
+  .imp .events { list-style: none; margin: 16px 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); gap: 10px 26px; }
+  .imp .events li { display: grid; grid-template-columns: 24px minmax(0, 1fr); gap: 10px; align-items: start; font: 400 14px/1.45 var(--sans); color: var(--ink-2); }
+  .imp .events .num { display: inline-grid; place-items: center; width: 22px; height: 22px; border-radius: 50%; border: 1.5px solid var(--ink); font: 700 11.5px var(--sans); color: var(--ink); background: var(--surface); }
+  .imp .events b { color: var(--ink); font-weight: 650; }
+
+  /* Tables */
+  .imp .table-wrap { overflow-x: auto; border-top: 2px solid var(--ink); }
+  .imp table { width: 100%; border-collapse: collapse; font-family: var(--sans); font-size: 14.5px; }
+  .imp thead th { font: 600 11px/1.3 var(--sans); letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); text-align: left; padding: 12px 14px 10px 0; border-bottom: 1px solid var(--rule-strong); vertical-align: bottom; }
+  .imp tbody th, .imp tbody td { padding: 13px 14px 13px 0; border-bottom: 1px solid var(--rule); text-align: left; vertical-align: top; }
+  .imp th.num, .imp td.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .imp tbody th { font-weight: 650; color: var(--ink); }
+  .imp tr.muted th, .imp tr.muted td { color: var(--muted); background: var(--neutral-bg); }
+  .imp tr.muted th { padding-left: 10px; }
+  .imp .t-ab { min-width: 560px; }
+  .imp .t-ab thead th.num { white-space: normal; }
+  .imp .t-ab tbody th { white-space: nowrap; }
+  .imp .t-ab tbody th .sub { display: block; margin-top: 3px; font-weight: 400; font-size: 12.5px; }
+  .imp .t-prop { min-width: 900px; }
+  .imp .t-prop td.when { font: 650 14px/1.2 var(--sans); white-space: nowrap; color: var(--ink); }
+  .imp .t-prop td.when small { display: block; margin-top: 4px; font-weight: 400; font-size: 12.5px; color: var(--muted); }
+  .imp .tipo { display: inline-flex; align-items: center; gap: 7px; font: 650 12px/1 var(--sans); color: var(--ink); }
+  .imp .tipo i { width: 11px; height: 11px; border-radius: 2px; display: inline-block; }
+  .imp .tipo.k-e i { background: var(--c-prop); }
+  .imp .tipo.k-r i { background: var(--c-rev); }
+  .imp .tipo.k-a i { background: transparent; border: 2px solid var(--c-rev); }
+  .imp .que { margin-top: 6px; font: 400 14px/1.45 var(--serif); color: var(--ink-2); max-width: 36ch; }
+  .imp .nota { font: 500 14.5px/1.4 var(--sans); color: var(--ink); max-width: 44ch; }
+  .imp .meta { display: block; margin-top: 4px; font: 400 12.5px/1.3 var(--sans); color: var(--muted); }
+  .imp td.res { white-space: nowrap; }
+  .imp td.res .big { display: block; font: 700 18px/1.1 var(--sans); font-variant-numeric: tabular-nums; color: var(--ink); }
+  .imp td.res small { font: 400 12.5px/1.3 var(--sans); color: var(--muted); }
+  .imp .rel { display: inline-flex; align-items: center; font: 650 12.5px/1 var(--sans); padding: 6px 10px; border-radius: 999px; white-space: nowrap; }
+  .imp .rel.hi { color: var(--good); background: var(--good-bg); }
+  .imp .rel.up { color: var(--good); background: transparent; border: 1.5px solid var(--good); }
+  .imp .rel.eq { color: var(--ink-2); background: var(--neutral-bg); }
+  .imp .rel.lo { color: var(--bad); background: var(--bad-bg); }
+  .imp .rel.na { color: var(--muted); background: transparent; border: 1px dashed var(--rule-strong); }
+
+  .imp .compare { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+  .imp .compare > div { border-top: 2px solid var(--ink); padding-top: 12px; display: grid; gap: 8px; align-content: start; }
+  .imp .compare h3 { margin: 0; font: 650 12px/1.2 var(--sans); letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); }
+  .imp .vs { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 14px; font-family: var(--sans); }
+  .imp .vs .a { font: 700 34px/1 var(--sans); color: var(--accent-ink); font-variant-numeric: tabular-nums; }
+  .imp .vs .b { font: 700 34px/1 var(--sans); color: var(--muted); font-variant-numeric: tabular-nums; }
+  .imp .vs span { font: 400 13.5px/1.35 var(--sans); color: var(--muted); }
+  .imp .compare p { font-size: 15.5px; color: var(--ink-2); }
+  .imp blockquote { margin: 26px 0 0; padding: 4px 0 4px 18px; border-left: 3px solid var(--accent); max-width: 60ch; }
+  .imp blockquote p { font: italic 400 20px/1.45 var(--serif); color: var(--ink); }
+  .imp blockquote footer { margin-top: 6px; font: 400 13px/1.4 var(--sans); color: var(--muted); }
+
+  .imp .caveats { margin: 0; padding-left: 18px; display: grid; gap: 10px; max-width: 80ch; }
+  .imp .caveats li { font-size: 15.5px; line-height: 1.55; color: var(--ink-2); }
+  .imp .caveats li::marker { color: var(--muted); }
+
+
+  @media (max-width: 820px) {
+    .imp .tiles { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .imp .compare { grid-template-columns: minmax(0, 1fr); }
+  }
+  @media (max-width: 640px) {
+    .imp .t-prop, .imp .t-prop tbody { display: block; min-width: 0; }
+    .imp .t-prop thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+    .imp .t-prop tbody tr { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 8px 12px; align-items: center; padding: 14px 0; border-bottom: 1px solid var(--rule); }
+    .imp .t-prop tbody td { display: block; padding: 0; border: 0; }
+    .imp .t-prop td.when { grid-column: 1 / -1; display: flex; gap: 8px; align-items: baseline; }
+    .imp .t-prop td.when small { display: inline; margin: 0; }
+    .imp .t-prop td:nth-child(2), .imp .t-prop td:nth-child(3) { grid-column: 1 / -1; }
+    .imp .t-prop .que, .imp .t-prop .nota { max-width: none; }
+  }
+  .imp .tiles { margin: 4px 0 30px; }
+  .imp tbody th, .imp tbody td { vertical-align: top; }
+  .imp .t-prop td.when, .imp .t-prop td.when small { text-transform: none; letter-spacing: 0; }
+  .imp blockquote footer { border: 0; padding: 0; display: block; }
+  .imp .legend .k-ref { width: 1px; height: 16px; background: var(--ink); border-radius: 0; }
+  .imp .nb { margin: 0 0 30px; }
+  .imp .nb-list { list-style: none; margin: 0; padding: 0; border-top: 2px solid var(--ink); }
+  .imp .nb-row { display: grid; grid-template-columns: minmax(0, 17em) minmax(0, 1fr) 6.5em; gap: 6px 16px; align-items: center; padding: 9px 0; border-bottom: 1px solid var(--rule); }
+  .imp .nb-lab { font: 600 14px/1.3 var(--sans); color: var(--ink); }
+  .imp .nb-lab small { display: block; margin-top: 2px; font: 400 12.5px/1.3 var(--sans); color: var(--muted); }
+  .imp .nb .bar { height: 16px; }
+  .imp .nb .bar .fill.k-e { background: var(--c-prop); }
+  .imp .nb .bar .fill.k-r { background: var(--c-rev); }
+  .imp .nb .bar .fill.cut::after { content: ""; position: absolute; top: -3px; bottom: -3px; right: 26px; width: 7px; background: var(--bg); transform: skewX(-24deg); }
+  .imp .nb-val { font: 700 15px/1.1 var(--sans); font-variant-numeric: tabular-nums; color: var(--ink); text-align: right; white-space: nowrap; }
+  .imp .nb-val small { display: block; margin-top: 2px; font: 400 12px/1.3 var(--sans); color: var(--muted); }
+  .imp .nb figcaption { margin-top: 10px; }
+  .parte { margin: clamp(52px, 7vw, 80px) 0 0; padding-top: 12px; border-top: 4px solid var(--ink); display: flex; align-items: center; gap: 10px; font: 700 13px/1.2 var(--sans); letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink); max-width: none; }
+  .parte span { display: inline-grid; place-items: center; width: 24px; height: 24px; border-radius: 50%; background: var(--accent); color: var(--bar-bg); font-size: 12.5px; letter-spacing: 0; }
+  .parte + section, .parte + .imp > section:first-child { margin-top: 28px; }
+  @media (max-width: 640px) {
+    .imp .nb-row { grid-template-columns: minmax(0, 1fr) auto; }
+    .imp .nb-lab { grid-column: 1 / -1; }
+  }
+</style>
+</head>
+<body>
+<div class="bl-bar">
+  <div class="bl-bar-in">
+    <div class="bl-top">
+      <span class="bl-mark">Bloomberg <span>Línea</span></span>
+      <span class="bl-tag">Uso interno · SEO</span>
+    </div>
+    <nav class="bl-nav" aria-label="Secciones">
+      <a href="#s-impacto">Impacto</a>
+      <a href="#s-tipica">Nota por nota</a>
+      <a href="#s-prop">Propuestas</a>
+      <a href="#s-foto">La foto</a>
+      <a href="#s-temas">Temas</a>
+      <a href="#s-titulares">Titulares</a>
+      <a href="#s-mes">Reparto</a>
+      <a href="#s-cal">Calendario</a>
+      <a href="#s-ever">Búsquedas</a>
+      <a href="#s-stop">Recortes</a>
+    </nav>
+  </div>
+</div>
+
+<div class="page">
+  <header>
+    <div class="mast">
+      <div>
+        <p class="kicker">Estilo de Vida · Brief editorial</p>
+        <h1>Qué rinde en Estilo de Vida</h1>
+        <p class="lede">En los últimos dos meses la sección vivió de pocas notas grandes: relojes con historia, tecnología retro con precio y el tutorial de la tendencia del día. Desde el 20 de agosto, con las notas propuestas y revisadas por SEO, pasó de 2.055 a 2.473 vistas diarias. Aquí va ese impacto, qué rindió cada tema y qué conviene publicar hasta febrero.</p>
+        <p class="byline">Por <b>SEO</b> · actualizado el 21 de septiembre de 2026</p>
+      </div>
+      <dl class="spec">
+        <div><dt>Periodo</dt><dd>8 semanas<small>notas publicadas del 20 jul al 13 sep 2026</small></dd></div>
+        <div><dt>Notas en español</dt><dd>110<small>unas 14 por semana</small></dd></div>
+        <div><dt>Mediana por nota</dt><dd>279 vistas<small>en sus primeros 7 días</small></dd></div>
+        <div><dt>Superan 1.000 vistas</dt><dd>12%<small>en su primera semana</small></dd></div>
+        <div><dt>Quedan bajo 200 vistas</dt><dd>28%<small>en su primera semana</small></dd></div>
+        <div><dt>Firma Isaac Garrido</dt><dd>95 notas<small>88% de las vistas</small></dd></div>
+      </dl>
+    </div>
+    <div class="bezel" aria-hidden="true"></div>
+  </header>
+
+  <p class="parte"><span>1</span>El impacto de las propuestas</p>
+  <div class="imp">
+  <section aria-labelledby="s-impacto">
+    <div class="sec-head">
+      <p class="eyebrow">Línea de tiempo</p>
+      <h2 id="s-impacto">Las dos semanas más altas llegaron con las propuestas de SEO</h2>
+      <p>Desde el 20 de agosto SEO revisa o propone notas de Isaac Garrido por DM y en #lifestyle. En ese mes la sección en español pasó de 2.055 a 2.473 vistas diarias en promedio, y 44% de lo leído salió de notas con su intervención.</p>
+      <p>Las dos últimas semanas promediaron 3.068 y 3.285 vistas diarias, las más altas del periodo. La mejor semana anterior tuvo 2.890, con el reloj de Omega x Swatch, antes de que SEO interviniera.</p>
+    </div>
+    <dl class="tiles">
+      <div><dt>Vistas diarias, promedio</dt><dd>+20%<small>2.055 antes, 2.473 después</small></dd></div>
+      <div><dt>Día típico, mediana</dt><dd>+32%<small>1.341 antes, 1.773 después</small></dd></div>
+      <div><dt>Desde el 20 de agosto</dt><dd>44%<small>de las vistas, de notas con intervención de SEO</small></dd></div>
+      <div><dt>Primera semana, mediana</dt><dd>391<small>notas con SEO, frente a 246 del resto</small></dd></div>
+    </dl>
+    <div class="legend">
+      <span><i class="k-prop"></i>Tema o ángulo propuesto por SEO</span>
+      <span><i class="k-rev"></i>Titular o nota revisados por SEO</span>
+      <span><i class="k-rest"></i>Resto de la sección</span>
+      <span><i class="k-ma"></i>Promedio de 7 días</span>
+    </div>
+    <div class="chart-card">
+      <div id="chart" role="img" aria-label="Vistas diarias de Estilo de Vida en español, del 20 de julio al 20 de septiembre de 2026, apiladas según si la nota tuvo intervención de SEO. Los picos del 7 y 8 de septiembre y del 17 y 18 de septiembre corresponden a notas propuestas por SEO."></div>
+      <div class="tip" id="tip" hidden></div>
+    </div>
+    <ol class="events">
+<li><span class="num">1</span><span><b>20 ago.</b> Primera revisión de un titular de Isaac en #lifestyle.</span></li>
+<li><span class="num">2</span><span><b>25 ago.</b> Reunión con Isaac. Ese día SEO propone las puntas de Dolly Parton: la fortuna y el esposo.</span></li>
+<li><span class="num">3</span><span><b>7 sep.</b> Propone la foto de los 80 en ChatGPT y, en Tecnología, el horario del Apple Event.</span></li>
+<li><span class="num">4</span><span><b>14 sep.</b> Le comparte el brief de la sección con los temas que rinden.</span></li>
+<li><span class="num">5</span><span><b>15 sep.</b> Le propone el Nokia 1100 por DM; la nota sale al día siguiente.</span></li>
+    </ol>
+  </section>
+
+  <section aria-labelledby="s-ab">
+    <div class="sec-head">
+      <p class="eyebrow">Antes y después</p>
+      <h2 id="s-ab">El aumento vino de las notas con SEO; el resto no creció</h2>
+      <p>Mismo número de días a cada lado de la primera intervención. Las notas sin participación de SEO promediaron 1.388 vistas diarias, menos que las 2.055 de antes: el crecimiento vino de las notas con SEO.</p>
+    </div>
+    <div class="table-wrap">
+      <table class="t-ab" aria-label="Vistas diarias antes y después del 20 de agosto">
+        <thead><tr><th scope="col">Periodo</th><th scope="col" class="num">Promedio por día</th><th scope="col" class="num">Mediana por día</th><th scope="col" class="num">Días con más de 3.000</th><th scope="col" class="num">Parte con intervención de SEO</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">20 jul – 19 ago</th><td class="num">2.055</td><td class="num">1.341</td><td class="num">4</td><td class="num">—</td></tr>
+          <tr><th scope="row">20 ago – 20 sep</th><td class="num">2.473</td><td class="num">1.773</td><td class="num">5</td><td class="num">44%</td></tr>
+          <tr class="muted"><th scope="row">20 ago – 20 sep<span class="sub">sin notas de SEO</span></th><td class="num">1.388</td><td class="num">1.231</td><td class="num">—</td><td class="num">—</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note">Vistas de GA4 de las notas en español de /estilo-de-vida/, sin la portada de la sección ni las notas del sitio en portugués que comparten la ruta. 34.737 de 79.147 vistas desde el 20 de agosto salieron de notas con intervención de SEO.</p>
+  </section>
+
+  <section aria-labelledby="s-tipica">
+    <div class="sec-head">
+      <p class="eyebrow">Frente a la nota típica</p>
+      <h2 id="s-tipica">Las notas con SEO rinden más que el resto</h2>
+      <p>Cada barra es una nota de Estilo de Vida en la que intervino SEO y que ya completó su primera semana. La línea vertical marca la nota típica: la mediana de las otras 36 notas publicadas desde el 20 de agosto.</p>
+    </div>
+
+    <div class="legend">
+      <span><i class="k-prop"></i>Tema o ángulo propuesto por SEO</span>
+      <span><i class="k-rev"></i>Titular o nota revisados por SEO</span>
+      <span><i class="k-ref"></i>Nota típica: 246 vistas</span>
+    </div>
+    <figure class="nb" aria-label="Vistas en la primera semana de cada nota de Estilo de Vida con intervención de SEO, frente a la nota típica">
+      <ol class="nb-list">
+        <li class="nb-row" title="¿Cómo crear tu foto de los 80 en ChatGPT? Estos son los pasos: 14.273 vistas en 7 días, 58,1 veces la típica"><span class="nb-lab">La foto de los 80 en ChatGPT<small>Tema propuesto · 7 sep</small></span><span class="bar" style="--w:100.0%;--mid:20.5%"><span class="fill k-e cut"></span><span class="mid"></span></span><span class="nb-val">14.273<small>58,1 veces</small></span></li>
+        <li class="nb-row" title="México está en la cima de los 10 mejores destinos gastronómicos del mundo en 2026: 1.085 vistas en 7 días, 4,4 veces la típica"><span class="nb-lab">México, mejor destino gastronómico<small>Titular revisado · 1 sep</small></span><span class="bar" style="--w:90.4%;--mid:20.5%"><span class="fill k-r"></span><span class="mid"></span></span><span class="nb-val">1.085<small>4,4 veces</small></span></li>
+        <li class="nb-row" title="Dolly Parton muere a los 80 años: ¿de cuánto era la fortuna de una de las cantantes más ricas del mundo?: 846 vistas en 7 días, 3,4 veces la típica"><span class="nb-lab">La fortuna de Dolly Parton<small>Revisada sin cambios · 25 ago</small></span><span class="bar" style="--w:70.5%;--mid:20.5%"><span class="fill k-r"></span><span class="mid"></span></span><span class="nb-val">846<small>3,4 veces</small></span></li>
+        <li class="nb-row" title="¿Quién era Carl Dean? El empresario que acompañó a Dolly Parton durante casi seis décadas: 802 vistas en 7 días, 3,3 veces la típica"><span class="nb-lab">Carl Dean, el esposo de Dolly Parton<small>Tema propuesto · 25 ago</small></span><span class="bar" style="--w:66.8%;--mid:20.5%"><span class="fill k-e"></span><span class="mid"></span></span><span class="nb-val">802<small>3,3 veces</small></span></li>
+        <li class="nb-row" title="Cámara, IA y hasta Wifi: Dyson lanza su primer cepillo de dientes de US$500 y así funciona: 756 vistas en 7 días, 3,1 veces la típica"><span class="nb-lab">El cepillo de dientes de Dyson<small>Revisada sin cambios · 1 sep</small></span><span class="bar" style="--w:63.0%;--mid:20.5%"><span class="fill k-r"></span><span class="mid"></span></span><span class="nb-val">756<small>3,1 veces</small></span></li>
+        <li class="nb-row" title="¿Cuánto dinero tienen el príncipe Harry y Meghan Markle? Esta es su fortuna en 2026: 445 vistas en 7 días, 1,8 veces la típica"><span class="nb-lab">La fortuna de Harry y Meghan<small>Revisada sin cambios · 20 ago</small></span><span class="bar" style="--w:37.1%;--mid:20.5%"><span class="fill k-r"></span><span class="mid"></span></span><span class="nb-val">445<small>1,8 veces</small></span></li>
+        <li class="nb-row" title="Murió Tim Curry a los 80 años: cuánto dejó de fortuna el actor de ‘Eso’ y ‘Mi pobre angelito’: 337 vistas en 7 días, 1,4 veces la típica"><span class="nb-lab">La fortuna de Tim Curry<small>Tema propuesto · 26 ago</small></span><span class="bar" style="--w:28.1%;--mid:20.5%"><span class="fill k-e"></span><span class="mid"></span></span><span class="nb-val">337<small>1,4 veces</small></span></li>
+        <li class="nb-row" title="De México a Chile: los países latinos que podrán ver el eclipse lunar este 28 de agosto: 272 vistas en 7 días, 1,1 veces la típica"><span class="nb-lab">Dónde se verá el eclipse lunar<small>Revisada sin cambios · 26 ago</small></span><span class="bar" style="--w:22.7%;--mid:20.5%"><span class="fill k-r"></span><span class="mid"></span></span><span class="nb-val">272<small>1,1 veces</small></span></li>
+        <li class="nb-row" title="Los conciertos de BTS en Argentina y Brasil llegarán a cines: fecha de estreno y dónde comprar entradas: 259 vistas en 7 días, 1,1 veces la típica"><span class="nb-lab">Los conciertos de BTS en cines<small>Titular revisado · 10 sep</small></span><span class="bar" style="--w:21.6%;--mid:20.5%"><span class="fill k-r"></span><span class="mid"></span></span><span class="nb-val">259<small>1,1 veces</small></span></li>
+        <li class="nb-row" title="Lamine Yamal estrena su primera colección con American Eagle: estos son los precios: 248 vistas en 7 días, 1,0 veces la típica"><span class="nb-lab">La colección de Lamine Yamal<small>Revisada sin cambios · 4 sep</small></span><span class="bar" style="--w:20.7%;--mid:20.5%"><span class="fill k-r"></span><span class="mid"></span></span><span class="nb-val">248<small>1,0 veces</small></span></li>
+        <li class="nb-row" title="ROG Xbox Ally X20: así es la consola de US$1.299 con la que ASUS y Xbox le hacen frente a la Steam Deck: 142 vistas en 7 días, 0,6 veces la típica"><span class="nb-lab">La consola ROG Xbox Ally X20<small>Titular revisado · 26 ago</small></span><span class="bar" style="--w:11.8%;--mid:20.5%"><span class="fill k-r"></span><span class="mid"></span></span><span class="nb-val">142<small>0,6 veces</small></span></li>
+        <li class="nb-row" title="Rupert Grint cumple 38 años: ¿cuánto dinero le sigue dejando ‘Harry Potter’?: 133 vistas en 7 días, 0,5 veces la típica"><span class="nb-lab">La fortuna de Rupert Grint<small>Revisada sin cambios · 24 ago</small></span><span class="bar" style="--w:11.1%;--mid:20.5%"><span class="fill k-r"></span><span class="mid"></span></span><span class="nb-val">133<small>0,5 veces</small></span></li>
+      </ol>
+      <figcaption class="note">Vistas de GA4 en los primeros 7 días de cada nota; la cifra de abajo dice cuántas veces rindió la nota típica. La barra más larga está cortada: «La foto de los 80 en ChatGPT» llegó a 14.273 vistas, 58,1 veces la típica.</figcaption>
+    </figure>
+    <div class="compare">
+      <div>
+        <h3>Vistas en la primera semana</h3>
+        <p class="vs"><b class="a">391</b><span>mediana de las 12 notas con SEO y semana completa</span><b class="b">246</b><span>mediana de las otras 36 publicadas desde el 20 de agosto</span></p>
+      </div>
+      <div>
+        <h3>Vistas acumuladas en la sección</h3>
+        <p class="vs"><b class="a">34.237</b><span>vistas de las 17 notas con SEO en Estilo de Vida</span><b class="b">4.777</b><span>si cada una hubiera rendido como la nota típica (281)</span></p>
+        <p>Casi todo el excedente viene de dos notas: la foto de los 80 en ChatGPT y el Nokia 1100. Además, 6 notas de Isaac en Tecnología salieron de propuestas o revisiones de SEO y suman 8.005 vistas.</p>
+      </div>
+    </div>
+    <blockquote>
+      <p>«[…] yo estoy feliz con usted, sus reco nos han hecho levantar la sección.»</p>
+      <footer>Isaac Garrido, por DM, 10 de septiembre de 2026</footer>
+    </blockquote>
+  </section>
+
+  <section aria-labelledby="s-prop">
+    <div class="sec-head">
+      <p class="eyebrow">Una por una</p>
+      <h2 id="s-prop">Lo que propuso y lo que salió</h2>
+      <p>Cada intervención de SEO en el DM con Isaac y en #lifestyle que terminó en una nota publicada, del 20 de agosto al 15 de septiembre. «La típica» es la mediana de la primera semana de las notas sin su intervención publicadas desde el 20 de agosto (246 vistas).</p>
+    </div>
+    <div class="table-wrap">
+      <table class="t-prop" aria-label="Propuestas y revisiones de SEO y el resultado de cada nota">
+        <thead><tr><th scope="col">Fecha</th><th scope="col">Qué hizo SEO</th><th scope="col">Nota publicada</th><th scope="col">Resultado</th><th scope="col">Frente a la típica</th></tr></thead>
+        <tbody>
+<tr><td class="when">20 ago<small>#lifestyle</small></td><td><span class="tipo k-a"><i aria-hidden="true"></i>Revisión sin cambios</span><p class="que">Revisó el titular y lo dejó igual: «tu título es una consulta frecuente».</p></td><td><p class="nota">¿Cuánto dinero tienen el príncipe Harry y Meghan Markle? Esta es su fortuna en 2026</p><small class="meta">Estilo de Vida · publicada el 20 ago</small></td><td class="res"><span class="big">445</span><small>vistas en 7 días</small></td><td><span class="rel up">1,8 × la típica</span></td></tr>
+<tr><td class="when">24 ago<small>#lifestyle</small></td><td><span class="tipo k-a"><i aria-hidden="true"></i>Revisión sin cambios</span><p class="que">Revisó el titular y los apartados; sin cambios.</p></td><td><p class="nota">Rupert Grint cumple 38 años: ¿cuánto dinero le sigue dejando ‘Harry Potter’?</p><small class="meta">Estilo de Vida · publicada el 24 ago</small></td><td class="res"><span class="big">133</span><small>vistas en 7 días</small></td><td><span class="rel lo">0,5 × la típica</span></td></tr>
+<tr><td class="when">25 ago<small>DM</small></td><td><span class="tipo k-e"><i aria-hidden="true"></i>Tema o ángulo</span><p class="que">Propuso la punta del esposo de Dolly Parton (Andrés la sugirió en paralelo).</p></td><td><p class="nota">¿Quién era Carl Dean? El empresario que acompañó a Dolly Parton durante casi seis décadas</p><small class="meta">Estilo de Vida · publicada el 25 ago</small></td><td class="res"><span class="big">802</span><small>vistas en 7 días</small></td><td><span class="rel hi">3,3 × la típica</span></td></tr>
+<tr><td class="when">25 ago<small>#lifestyle</small></td><td><span class="tipo k-a"><i aria-hidden="true"></i>Revisión sin cambios</span><p class="que">Revisó el titular de la fortuna de Dolly Parton.</p></td><td><p class="nota">Dolly Parton muere a los 80 años: ¿de cuánto era la fortuna de una de las cantantes más ricas del mundo?</p><small class="meta">Estilo de Vida · publicada el 25 ago</small></td><td class="res"><span class="big">846</span><small>vistas en 7 días</small></td><td><span class="rel hi">3,4 × la típica</span></td></tr>
+<tr><td class="when">26 ago<small>#lifestyle</small></td><td><span class="tipo k-e"><i aria-hidden="true"></i>Tema o ángulo</span><p class="que">Definió el enfoque (fortuna) y propuso el titular.</p></td><td><p class="nota">Murió Tim Curry a los 80 años: cuánto dejó de fortuna el actor de ‘Eso’ y ‘Mi pobre angelito’</p><small class="meta">Estilo de Vida · publicada el 26 ago</small></td><td class="res"><span class="big">337</span><small>vistas en 7 días</small></td><td><span class="rel up">1,4 × la típica</span></td></tr>
+<tr><td class="when">26 ago<small>#lifestyle</small></td><td><span class="tipo k-r"><i aria-hidden="true"></i>Titular o nota</span><p class="que">Propuso el titular que salió publicado.</p></td><td><p class="nota">ROG Xbox Ally X20: así es la consola de US$1.299 con la que ASUS y Xbox le hacen frente a la Steam Deck</p><small class="meta">Estilo de Vida · publicada el 26 ago</small></td><td class="res"><span class="big">142</span><small>vistas en 7 días</small></td><td><span class="rel lo">0,6 × la típica</span></td></tr>
+<tr><td class="when">26 ago<small>#lifestyle</small></td><td><span class="tipo k-a"><i aria-hidden="true"></i>Revisión sin cambios</span><p class="que">Revisó la nota: «sin correcciones».</p></td><td><p class="nota">De México a Chile: los países latinos que podrán ver el eclipse lunar este 28 de agosto</p><small class="meta">Estilo de Vida · publicada el 26 ago</small></td><td class="res"><span class="big">272</span><small>vistas en 7 días</small></td><td><span class="rel eq">1,1 × la típica</span></td></tr>
+<tr><td class="when">31 ago<small>DM</small></td><td><span class="tipo k-e"><i aria-hidden="true"></i>Tema o ángulo</span><p class="que">Propuso el tema: la velocidad para ver Netflix en 4K.</p></td><td><p class="nota">¿Cómo ver películas y series de Netflix en 4K? Esta es la velocidad que necesitas</p><small class="meta">Tecnología · publicada el 31 ago</small></td><td class="res"><span class="big">67</span><small>vistas, 26 ago – 20 sep</small></td><td><span class="rel na">Otra sección</span></td></tr>
+<tr><td class="when">31 ago<small>DM</small></td><td><span class="tipo k-e"><i aria-hidden="true"></i>Tema o ángulo</span><p class="que">Propuso el tema: los celulares que se quedan sin WhatsApp.</p></td><td><p class="nota">Estos son los teléfonos que se quedarán sin WhatsApp en septiembre 2026</p><small class="meta">Tecnología · publicada el 2 sep</small></td><td class="res"><span class="big">215</span><small>vistas, 26 ago – 20 sep</small></td><td><span class="rel na">Otra sección</span></td></tr>
+<tr><td class="when">31 ago<small>DM</small></td><td><span class="tipo k-e"><i aria-hidden="true"></i>Tema o ángulo</span><p class="que">Propuso el ángulo: «no se lanzarán todos este año».</p></td><td><p class="nota">Apple divide en dos sus lanzamientos: el iPhone 18, el iPhone Air 2 y el 18e llegarían hasta 2027</p><small class="meta">Tecnología · publicada el 8 sep</small></td><td class="res"><span class="big">945</span><small>vistas, 26 ago – 20 sep</small></td><td><span class="rel na">Otra sección</span></td></tr>
+<tr><td class="when">31 ago<small>#lifestyle</small></td><td><span class="tipo k-r"><i aria-hidden="true"></i>Titular o nota</span><p class="que">Propuso el titular con México como primer lugar del ranking.</p></td><td><p class="nota">México está en la cima de los 10 mejores destinos gastronómicos del mundo en 2026</p><small class="meta">Estilo de Vida · publicada el 1 sep</small></td><td class="res"><span class="big">1.085</span><small>vistas en 7 días</small></td><td><span class="rel hi">4,4 × la típica</span></td></tr>
+<tr><td class="when">1 sep<small>#lifestyle</small></td><td><span class="tipo k-a"><i aria-hidden="true"></i>Revisión sin cambios</span><p class="que">Revisó el titular y lo dejó igual.</p></td><td><p class="nota">Cámara, IA y hasta Wifi: Dyson lanza su primer cepillo de dientes de US$500 y así funciona</p><small class="meta">Estilo de Vida · publicada el 1 sep</small></td><td class="res"><span class="big">756</span><small>vistas en 7 días</small></td><td><span class="rel hi">3,1 × la típica</span></td></tr>
+<tr><td class="when">3 sep<small>DM</small></td><td><span class="tipo k-a"><i aria-hidden="true"></i>Revisión sin cambios</span><p class="que">Revisó el titular y sugirió una alternativa; quedó el de Isaac.</p></td><td><p class="nota">Lamine Yamal estrena su primera colección con American Eagle: estos son los precios</p><small class="meta">Estilo de Vida · publicada el 4 sep</small></td><td class="res"><span class="big">248</span><small>vistas en 7 días</small></td><td><span class="rel eq">1,0 × la típica</span></td></tr>
+<tr><td class="when">7 sep<small>#lifestyle</small></td><td><span class="tipo k-e"><i aria-hidden="true"></i>Tema o ángulo</span><p class="que">Propuso el tema: la foto de los 80 en ChatGPT («todo el mundo en Instagram está con este tema»).</p></td><td><p class="nota">¿Cómo crear tu foto de los 80 en ChatGPT? Estos son los pasos</p><small class="meta">Estilo de Vida · publicada el 7 sep</small></td><td class="res"><span class="big">14.273</span><small>vistas en 7 días</small></td><td><span class="rel hi">58,1 × la típica</span></td></tr>
+<tr><td class="when">7 sep<small>#lifestyle</small></td><td><span class="tipo k-r"><i aria-hidden="true"></i>Titular o nota</span><p class="que">Metatítulo, metadescripción y enlaces internos desde notas previas.</p></td><td><p class="nota">A horas del Apple Event, filtran los posibles precios del iPhone 18 Pro y el modelo Ultra</p><small class="meta">Tecnología · publicada el 7 sep</small></td><td class="res"><span class="big">4.400</span><small>vistas, 26 ago – 20 sep</small></td><td><span class="rel na">Otra sección</span></td></tr>
+<tr><td class="when">7 sep<small>#lifestyle</small></td><td><span class="tipo k-e"><i aria-hidden="true"></i>Tema o ángulo</span><p class="que">Propuso el tema (horario del Apple Event) y el title.</p></td><td><p class="nota">Apple Event 2026: horario y dónde ver la presentación del iPhone 18 Pro en México, Argentina, Colombia y más</p><small class="meta">Tecnología · publicada el 7 sep</small></td><td class="res"><span class="big">1.705</span><small>vistas, 26 ago – 20 sep</small></td><td><span class="rel na">Otra sección</span></td></tr>
+<tr><td class="when">9 sep<small>DM</small></td><td><span class="tipo k-e"><i aria-hidden="true"></i>Tema o ángulo</span><p class="que">Propuso el en vivo del Apple Event.</p></td><td><p class="nota">Apple presenta el iPhone 18 EN VIVO: siga los anuncios, precios y novedades del Apple Event 2026</p><small class="meta">Tecnología · publicada el 9 sep</small></td><td class="res"><span class="big">673</span><small>vistas, 26 ago – 20 sep</small></td><td><span class="rel na">Otra sección</span></td></tr>
+<tr><td class="when">10 sep<small>DM</small></td><td><span class="tipo k-r"><i aria-hidden="true"></i>Titular o nota</span><p class="que">Ajustes de titular y H2, y datos de servicio (fechas y entradas).</p></td><td><p class="nota">Los conciertos de BTS en Argentina y Brasil llegarán a cines: fecha de estreno y dónde comprar entradas</p><small class="meta">Estilo de Vida · publicada el 10 sep</small></td><td class="res"><span class="big">259</span><small>vistas en 7 días</small></td><td><span class="rel eq">1,1 × la típica</span></td></tr>
+<tr><td class="when">10 sep<small>DM</small></td><td><span class="tipo k-r"><i aria-hidden="true"></i>Titular o nota</span><p class="que">Titular centrado en Don Ramón y El Chapulín, y cinco ajustes.</p></td><td><p class="nota">Serie de Don Ramón y película de El Chapulín Colorado, los nuevos proyectos del legado de Chespirito</p><small class="meta">Estilo de Vida · publicada el 14 sep</small></td><td class="res"><span class="big">538</span><small>vistas en 6 días</small></td><td><span class="rel na">Sin 7 días aún</span></td></tr>
+<tr><td class="when">14 sep<small>DM</small></td><td><span class="tipo k-r"><i aria-hidden="true"></i>Titular o nota</span><p class="que">Propuso dos titulares; salió el segundo, tal cual.</p></td><td><p class="nota">De Cher a Madonna: la fortuna que Bob Mackie construyó vistiendo a las grandes estrellas de Hollywood</p><small class="meta">Estilo de Vida · publicada el 14 sep</small></td><td class="res"><span class="big">232</span><small>vistas en 6 días</small></td><td><span class="rel na">Sin 7 días aún</span></td></tr>
+<tr><td class="when">15 sep<small>DM</small></td><td><span class="tipo k-e"><i aria-hidden="true"></i>Tema o ángulo</span><p class="que">Propuso el ángulo de la fortuna y un H2 sobre cómo la hizo.</p></td><td><p class="nota">¿Cuánto dinero tiene Sydney Sweeney? Así es la fortuna de la actriz en 2026</p><small class="meta">Estilo de Vida · publicada el 15 sep</small></td><td class="res"><span class="big">366</span><small>vistas en 5 días</small></td><td><span class="rel na">Sin 7 días aún</span></td></tr>
+<tr><td class="when">15 sep<small>DM</small></td><td><span class="tipo k-e"><i aria-hidden="true"></i>Tema o ángulo</span><p class="que">La nota salió de su pregunta: «¿ganan dinero los ganadores del Emmy?».</p></td><td><p class="nota">¿De qué está hecha la estatuilla del Premio Emmy y por qué no puede venderse?</p><small class="meta">Estilo de Vida · publicada el 15 sep</small></td><td class="res"><span class="big">62</span><small>vistas en 5 días</small></td><td><span class="rel na">Sin 7 días aún</span></td></tr>
+<tr><td class="when">15 sep<small>DM</small></td><td><span class="tipo k-e"><i aria-hidden="true"></i>Tema o ángulo</span><p class="que">Le pasó la nota de Infobae y luego ajustes de H2 y precios.</p></td><td><p class="nota">El Nokia 1100, el teléfono más vendido de la historia, vuelve a ser tendencia en 2026: precio y dónde comprarlo</p><small class="meta">Estilo de Vida · publicada el 16 sep</small></td><td class="res"><span class="big">12.432</span><small>vistas en 4 días</small></td><td><span class="rel na">Sin 7 días aún</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section aria-labelledby="s-lectura">
+    <div class="sec-head">
+      <p class="eyebrow">Cómo leer estas cifras</p>
+      <h2 id="s-lectura">Qué muestran y qué no</h2>
+    </div>
+    <ul class="caveats">
+      <li>Muestran coincidencia en el tiempo, no causa. Sin estas propuestas Isaac habría escrito otras notas en esos espacios; por eso la comparación justa es contra la nota típica y no contra cero.</li>
+      <li>Dos notas explican la mayor parte del salto. Si una semana no hay un tema viral, la sección vuelve a su nivel habitual.</li>
+      <li>Solo cuenta intervenciones de SEO visibles en Slack. Las propuestas de Andrés y Angela (por ejemplo «Hasta cuándo estará La Odisea en cines» o los perfumes de Amor y Amistad) quedan en «resto de la sección».</li>
+      <li>La nota del iPhone Duo del 9 de septiembre queda fuera: en Slack no se puede saber si la optimización de SEO fue sobre esa nota o sobre otra de precios publicada el mismo día.</li>
+      <li>Las notas de los últimos días todavía no completan su primera semana y se muestran con sus vistas a la fecha.</li>
+    </ul>
+  </section>
+  </div>
+
+  <p class="parte"><span>2</span>Qué rinde y qué publicar</p>
+
+  <section aria-labelledby="s-foto">
+    <div class="sec-head">
+      <p class="eyebrow">La foto de los dos meses</p>
+      <h2 id="s-foto">Pocas notas grandes</h2>
+    </div>
+    <div class="stack">
+      <p>Entre el 20 de julio y el 13 de septiembre la sección publicó <strong>110 notas en español</strong>. Las 10 más leídas hicieron 62% de las vistas de la primera semana; la nota típica se quedó en 279. Relojes, con solo 6 notas, hizo 31%.</p>
+      <p>Cada nota se mide por sus vistas en los primeros 7 días, para que las más recientes no salgan castigadas. La ruta /estilo-de-vida/ también la usa el sitio en portugués: 24% de las vistas de la ruta en el periodo fueron de .com.br. Todo lo que sigue cuenta solo las notas en español.</p>
+      <p>Después del corte ya apareció otra nota grande: «El Nokia 1100, el teléfono más vendido de la historia, vuelve a ser tendencia en 2026» (16 de septiembre) sumó <strong>12.432 vistas en 4 días</strong> y 31.374 clics de Discover.</p>
+    </div>
+    <div class="plan">
+      <div>
+        <h3><span class="chip up"><svg viewBox="0 0 10 10" aria-hidden="true"><path d="M0 9h10L5 1z"/></svg>Se confirma</span>frente a los 12 meses</h3>
+        <ul>
+          <li>Relojes y gadgets con precio siguen arriba. Relojes pasó de 1,4 a 5,7 veces la mediana de la sección.</li>
+          <li>Ranking con un país latinoamericano: 3 notas y mediana de 1.085 en su primera semana.</li>
+          <li>Los titulares de 71 a 89 caracteres siguen siendo la mejor franja: mediana de 333.</li>
+          <li>45% de las notas sigue sin ninguna de las cuatro piezas del titular, igual que en el año.</li>
+        </ul>
+      </div>
+      <div>
+        <h3><span class="chip down"><svg viewBox="0 0 10 10" aria-hidden="true"><path d="M0 1h10L5 9z"/></svg>Cambia</span>en estas 8 semanas</h3>
+        <ul>
+          <li>Fortunas pierde fuerza: 20% de las notas, 9% de las vistas y ninguna pasó de 1.000 en su primera semana.</li>
+          <li>Premios cae a 0,5 veces la mediana. Sin una gala grande, no rinde.</li>
+          <li>Aparece una veta: lo retro con precio. Nokia 300 Charge, Nokia 1100, los Casio clásicos y la foto de los 80.</li>
+          <li>Calidad de vida y países, el tema más fuerte del año, tuvo una sola nota en 8 semanas.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="s-temas">
+    <div class="sec-head">
+      <p class="eyebrow">Temas</p>
+      <h2 id="s-temas">Dónde rinde cada nota</h2>
+      <p>Notas publicadas del 20 de julio al 13 de septiembre, agrupadas por el tema principal del titular. La columna del índice compara la mediana de cada tema con la de la sección (1,0 = igual a la sección), primero en los 12 meses del brief anterior y luego en estas 8 semanas.</p>
+    </div>
+    <div class="legend" aria-hidden="true">
+      <span><i class="k-views"></i>Mediana de vistas en la primera semana</span>
+      <span><i class="k-mid"></i>Mediana de la sección (279)</span>
+    </div>
+    <div class="table-wrap">
+      <table class="t-topics" aria-label="Rendimiento por tema, notas publicadas del 20 de julio al 13 de septiembre de 2026">
+        <thead>
+          <tr>
+            <th scope="col">Tema</th>
+            <th scope="col" class="num">Notas</th>
+            <th scope="col">Mediana en la primera semana</th>
+            <th scope="col" class="num">Peso en vistas</th>
+            <th scope="col">Índice: año → 2 meses</th>
+            <th scope="col">Canal</th>
+            <th scope="col">Qué hacer</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row">Relojes<span class="how">Lanzamientos con historia: Omega x Swatch (17.267) y dos Casio clásicos.</span></th><td class="num">6<span class="star">*</span></td><td><div class="barline"><div class="bar" title="Relojes: mediana de 1.589 vistas en la primera semana" style="--w:100.0%;--mid:17.6%"><span class="fill"></span><span class="mid"></span></div><span class="val">1.589</span></div></td><td class="num">31%</td><td class="idx">1,4 → <b>5,7</b></td><td class="chan">Discover</td><td><span class="chip up"><svg viewBox="0 0 10 10" aria-hidden="true"><path d="M0 9h10L5 1z"/></svg>Subir</span></td></tr>
+          <tr><th scope="row">Viajes y destinos<span class="how">Solo rankings con un país latinoamericano: hoteles 2026 (1.434), resorts de Centroamérica (1.097).</span></th><td class="num">7<span class="star">*</span></td><td><div class="barline"><div class="bar" title="Viajes y destinos: mediana de 484 vistas en la primera semana" style="--w:30.5%;--mid:17.6%"><span class="fill"></span><span class="mid"></span></div><span class="val">484</span></div></td><td class="num">5%</td><td class="idx">1,2 → <b>1,7</b></td><td class="chan">Discover</td><td><span class="chip up"><svg viewBox="0 0 10 10" aria-hidden="true"><path d="M0 9h10L5 1z"/></svg>Subir</span></td></tr>
+          <tr><th scope="row">IA, apps y redes<span class="how">El tutorial de lo viral, el mismo día: la foto de los 80 en ChatGPT hizo 14.273.</span></th><td class="num">5<span class="star">*</span></td><td><div class="barline"><div class="bar" title="IA, apps y redes: mediana de 452 vistas en la primera semana" style="--w:28.4%;--mid:17.6%"><span class="fill"></span><span class="mid"></span></div><span class="val">452</span></div></td><td class="num">18%</td><td class="idx">1,0 → <b>1,6</b></td><td class="chan">Search</td><td><span class="chip keep"><svg viewBox="0 0 10 10" aria-hidden="true"><circle cx="5" cy="5" r="4"/></svg>Mantener</span></td></tr>
+          <tr><th scope="row">Gadgets y móviles<span class="how">Precio y dónde comprar; lo retro rinde: Nokia 300 Charge (2.371).</span></th><td class="num">10</td><td><div class="barline"><div class="bar" title="Gadgets y móviles: mediana de 436 vistas en la primera semana" style="--w:27.4%;--mid:17.6%"><span class="fill"></span><span class="mid"></span></div><span class="val">436</span></div></td><td class="num">7%</td><td class="idx">1,7 → <b>1,6</b></td><td class="chan">Search</td><td><span class="chip up"><svg viewBox="0 0 10 10" aria-hidden="true"><path d="M0 9h10L5 1z"/></svg>Subir</span></td></tr>
+          <tr><th scope="row">Gastronomía y bebidas<span class="how">Bajar. La excepción sigue siendo el ranking con un país: México, primer destino gastronómico (1.085).</span></th><td class="num">4<span class="star">*</span></td><td><div class="barline"><div class="bar" title="Gastronomía y bebidas: mediana de 402 vistas en la primera semana" style="--w:25.3%;--mid:17.6%"><span class="fill"></span><span class="mid"></span></div><span class="val">402</span></div></td><td class="num">2%</td><td class="idx">0,9 → <b>1,4</b></td><td class="chan">Search</td><td><span class="chip down"><svg viewBox="0 0 10 10" aria-hidden="true"><path d="M0 1h10L5 9z"/></svg>Bajar</span></td></tr>
+          <tr><th scope="row">Eclipses y cielo<span class="how">Por calendario: la hora exacta en cada país.</span></th><td class="num">6<span class="star">*</span></td><td><div class="barline"><div class="bar" title="Eclipses y cielo: mediana de 308 vistas en la primera semana" style="--w:19.4%;--mid:17.6%"><span class="fill"></span><span class="mid"></span></div><span class="val">308</span></div></td><td class="num">10%</td><td class="idx">1,4 → <b>1,1</b></td><td class="chan">Mixto</td><td><span class="chip flat"><svg viewBox="0 0 10 10" aria-hidden="true"><circle cx="5" cy="5" r="4"/></svg>Por calendario</span></td></tr>
+          <tr><th scope="row">Fortunas y sueldos<span class="how">La mitad de notas: solo con un personaje que ya se busca ese día (muerte, cumpleaños, nombramiento).</span></th><td class="num">22</td><td><div class="barline"><div class="bar" title="Fortunas y sueldos: mediana de 288 vistas en la primera semana" style="--w:18.1%;--mid:17.6%"><span class="fill"></span><span class="mid"></span></div><span class="val">288</span></div></td><td class="num">9%</td><td class="idx">1,3 → <b>1,0</b></td><td class="chan">Search</td><td><span class="chip down"><svg viewBox="0 0 10 10" aria-hidden="true"><path d="M0 1h10L5 9z"/></svg>Bajar volumen</span></td></tr>
+          <tr><th scope="row">Series, cine y streaming<span class="how">Bajar. Solo preguntas de servicio: hasta cuándo sigue en cines (1.158).</span></th><td class="num">13</td><td><div class="barline"><div class="bar" title="Series, cine y streaming: mediana de 282 vistas en la primera semana" style="--w:17.7%;--mid:17.6%"><span class="fill"></span><span class="mid"></span></div><span class="val">282</span></div></td><td class="num">5%</td><td class="idx">0,9 → <b>1,0</b></td><td class="chan">Search</td><td><span class="chip down"><svg viewBox="0 0 10 10" aria-hidden="true"><path d="M0 1h10L5 9z"/></svg>Bajar</span></td></tr>
+          <tr><th scope="row">Música y conciertos<span class="how">Bajar. Ninguna llegó a 500 en su primera semana.</span></th><td class="num">8</td><td><div class="barline"><div class="bar" title="Música y conciertos: mediana de 239 vistas en la primera semana" style="--w:15.0%;--mid:17.6%"><span class="fill"></span><span class="mid"></span></div><span class="val">239</span></div></td><td class="num">2%</td><td class="idx">0,8 → <b>0,9</b></td><td class="chan">Search</td><td><span class="chip down"><svg viewBox="0 0 10 10" aria-hidden="true"><path d="M0 1h10L5 9z"/></svg>Bajar</span></td></tr>
+          <tr><th scope="row">Lujo, moda y marcas<span class="how">Bajar lo genérico. Con ranking: marcas de lujo de segunda mano (411).</span></th><td class="num">8</td><td><div class="barline"><div class="bar" title="Lujo, moda y marcas: mediana de 208 vistas en la primera semana" style="--w:13.1%;--mid:17.6%"><span class="fill"></span><span class="mid"></span></div><span class="val">208</span></div></td><td class="num">2%</td><td class="idx">0,8 → <b>0,7</b></td><td class="chan">Mixto</td><td><span class="chip down"><svg viewBox="0 0 10 10" aria-hidden="true"><path d="M0 1h10L5 9z"/></svg>Bajar</span></td></tr>
+          <tr><th scope="row">Premios y ganadores<span class="how">Solo las galas grandes, con hora o dinero en el titular.</span></th><td class="num">5<span class="star">*</span></td><td><div class="barline"><div class="bar" title="Premios y ganadores: mediana de 148 vistas en la primera semana" style="--w:9.3%;--mid:17.6%"><span class="fill"></span><span class="mid"></span></div><span class="val">148</span></div></td><td class="num">1%</td><td class="idx">1,0 → <b>0,5</b></td><td class="chan">Search</td><td><span class="chip down"><svg viewBox="0 0 10 10" aria-hidden="true"><path d="M0 1h10L5 9z"/></svg>Bajar</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note">* Menos de 8 notas: el veredicto también se apoya en los 12 meses. Temas con menos de 4 notas, fuera de la tabla: Calidad de vida y países (1 nota, mediana 368; el tema más fuerte del año); Cultura pop y coleccionables (3 notas, mediana 217; la tienda de Bandai Namco en México hizo 1.744); Mundial y deportes (2 notas, mediana 197; el Mundial terminó el 19 de julio); Arte, libros y cultura (1 nota, mediana 965); Bienestar, belleza y hogar (1 nota, mediana 243); Realeza y celebridades (1 nota, mediana 163); Dinero, parejas y generaciones (1 nota, mediana 111). «Canal» indica qué pesa más en los clics de Search Console (búsqueda frente a Discover) de las notas de cada tema.</p>
+  </section>
+
+  <section aria-labelledby="s-titulares">
+    <div class="sec-head">
+      <p class="eyebrow">Titulares</p>
+      <h2 id="s-titulares">Cuatro piezas que cambian el resultado</h2>
+      <p>Ranking, país latinoamericano, año y pregunta. Cada una sube la mediana y juntas rinden más: las 3 notas con ranking y país latinoamericano tuvieron mediana de 1.085 en su primera semana. 45% de las notas no lleva ninguna.</p>
+    </div>
+    <div class="legend" aria-hidden="true">
+      <span><i class="k-views"></i>Notas que superan 1.000 vistas en 7 días</span>
+      <span><i class="k-mid"></i>Promedio de la sección (12%)</span>
+    </div>
+    <div class="table-wrap">
+      <table class="t-hooks" aria-label="Rendimiento según las piezas del titular">
+        <thead>
+          <tr>
+            <th scope="col">El titular lleva</th>
+            <th scope="col" class="num">Notas</th>
+            <th scope="col" class="num">Mediana</th>
+            <th scope="col">Superan 1.000 vistas</th>
+            <th scope="col" class="num">Superan 500</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class=""><th scope="row">Ranking o lista</th><td class="num">19</td><td class="num">368</td><td><div class="barline"><div class="bar" title="Ranking o lista: 21% supera 1.000 vistas en 7 días" style="--w:21.1%;--mid:11.8%"><span class="fill"></span><span class="mid"></span></div><span class="val">21%</span></div></td><td class="num">32%</td></tr>
+          <tr class=""><th scope="row">País latinoamericano</th><td class="num">22</td><td class="num">316</td><td><div class="barline"><div class="bar" title="País latinoamericano: 23% supera 1.000 vistas en 7 días" style="--w:22.7%;--mid:11.8%"><span class="fill"></span><span class="mid"></span></div><span class="val">23%</span></div></td><td class="num">23%</td></tr>
+          <tr class=""><th scope="row">Pregunta</th><td class="num">25</td><td class="num">351</td><td><div class="barline"><div class="bar" title="Pregunta: 20% supera 1.000 vistas en 7 días" style="--w:20.0%;--mid:11.8%"><span class="fill"></span><span class="mid"></span></div><span class="val">20%</span></div></td><td class="num">36%</td></tr>
+          <tr class=""><th scope="row">Año</th><td class="num">19</td><td class="num">368</td><td><div class="barline"><div class="bar" title="Año: 16% supera 1.000 vistas en 7 días" style="--w:15.8%;--mid:11.8%"><span class="fill"></span><span class="mid"></span></div><span class="val">16%</span></div></td><td class="num">26%</td></tr>
+          <tr class="ref-row"><th scope="row">Toda la sección</th><td class="num">110</td><td class="num">279</td><td><div class="barline"><div class="bar" title="Toda la sección: 12% supera 1.000 vistas en 7 días" style="--w:11.8%;--mid:11.8%"><span class="fill"></span><span class="mid"></span></div><span class="val">12%</span></div></td><td class="num">23%</td></tr>
+          <tr class=""><th scope="row">Ninguna de las cuatro piezas</th><td class="num">49</td><td class="num">248</td><td><div class="barline"><div class="bar" title="Ninguna de las cuatro piezas: 8% supera 1.000 vistas en 7 días" style="--w:8.2%;--mid:11.8%"><span class="fill"></span><span class="mid"></span></div><span class="val">8%</span></div></td><td class="num">20%</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note">Una nota puede llevar varias piezas y contar en más de una fila. Los titulares de 71 a 89 caracteres tuvieron la mejor mediana (333, 51 notas), frente a 200 con 70 caracteres o menos y 251 con 90 o más.</p>
+
+    <div class="molds">
+      <article class="mold">
+        <h3>Reloj con historia</h3>
+        <p class="formula"><b>[Marca]</b> lanza <b>[reloj]</b> por <b>[aniversario / película / colaboración]</b>, con <b>precio</b> y dónde comprarlo</p>
+        <ul>
+          <li>Omega x Swatch lanza un reloj con oro para celebrar el alunizaje del Apollo 11<span class="v">17.267</span></li>
+          <li>Casio actualiza uno de sus relojes más clásicos con Bluetooth y una pila que dura años<span class="v">5.918</span></li>
+        </ul>
+      </article>
+      <article class="mold">
+        <h3>Tecnología retro con precio</h3>
+        <p class="formula"><b>[Clásico]</b> vuelve en <b>[año]</b>: <b>precio</b> y dónde comprarlo</p>
+        <ul>
+          <li>El Nokia 1100, el teléfono más vendido de la historia, vuelve a ser tendencia en 2026: precio y dónde comprarlo<span class="v">12.432 · 4 días</span></li>
+          <li>Nokia 300 Charge: precio y dónde comprar el teléfono retro que sirve como batería<span class="v">2.371</span></li>
+        </ul>
+      </article>
+      <article class="mold">
+        <h3>Ranking con América Latina</h3>
+        <p class="formula">Los <b>[N] mejores [hoteles / destinos / ciudades]</b> del mundo en <b>[año]</b>: <b>[país latinoamericano]</b> destaca en el ranking</p>
+        <ul>
+          <li>Los 10 mejores hoteles del mundo en 2026: uno de Latinoamérica destaca en el ranking<span class="v">1.434</span></li>
+          <li>México está en la cima de los 10 mejores destinos gastronómicos del mundo en 2026<span class="v">1.085</span></li>
+        </ul>
+      </article>
+      <article class="mold">
+        <h3>Dinero con noticia del día</h3>
+        <p class="formula"><b>[Persona]</b> <b>[muere / cumple N años / asume]</b>: ¿de cuánto es su fortuna?</p>
+        <ul>
+          <li>Dolly Parton muere a los 80 años: ¿de cuánto era la fortuna de una de las cantantes más ricas del mundo?<span class="v">846</span></li>
+          <li>Daniel Radcliffe cumple 37 años: de cuánto es la fortuna del actor de Harry Potter<span class="v">837</span></li>
+        </ul>
+      </article>
+      <article class="mold">
+        <h3>Evento con hora por país</h3>
+        <p class="formula">¿A qué hora es <b>[evento]</b> y cómo verlo desde <b>México, Colombia, Argentina, Venezuela</b> y más?</p>
+        <ul>
+          <li>A qué hora y cómo ver el eclipse solar desde Colombia, México, Argentina, Venezuela y más<span class="v">4.661</span></li>
+          <li>A qué hora inicia el eclipse solar del 12 de agosto<span class="v">3.045</span></li>
+        </ul>
+      </article>
+      <article class="mold">
+        <h3>Pregunta de servicio</h3>
+        <p class="formula">¿Cómo <b>[hacer lo que se volvió viral]</b>? ¿Hasta cuándo <b>[sigue en cines]</b>?</p>
+        <ul>
+          <li>¿Cómo crear tu foto de los 80 en ChatGPT? Estos son los pasos<span class="v">14.273</span></li>
+          <li>Hasta cuándo estará “La Odisea” y “Spider-Man” en cartelera y cines de México<span class="v">1.158</span></li>
+        </ul>
+      </article>
+    </div>
+    <p class="note">Cifras junto a cada ejemplo: vistas en GA4 en los primeros 7 días de la nota. La del Nokia 1100, publicada después del corte, cuenta sus primeros 4 días.</p>
+  </section>
+
+  <section aria-labelledby="s-mes">
+    <div class="sec-head">
+      <p class="eyebrow">Reparto de las notas</p>
+      <h2 id="s-mes">El mismo volumen, mejor repartido</h2>
+      <p>Entre el 20 de julio y el 13 de septiembre Isaac publicó 95 notas, unas 12 por semana. Relojes fue el tema con menos notas y más lectura: 5 notas y 27% de lo que se leyó de las suyas en su primera semana. Fortunas fue lo contrario: 20 notas y 9%.</p>
+    </div>
+    <div class="legend" aria-hidden="true">
+      <span><i class="k-notes"></i>Peso en sus notas</span>
+      <span><i class="k-views"></i>Peso en sus vistas de la primera semana</span>
+    </div>
+    <div class="table-wrap">
+      <table class="t-mix" aria-label="Notas y vistas de Isaac Garrido por tema, 20 de julio a 13 de septiembre de 2026">
+        <thead>
+          <tr>
+            <th scope="col">Tema</th>
+            <th scope="col" class="num">Notas por semana</th>
+            <th scope="col" class="num">Mediana</th>
+            <th scope="col">Peso en notas y en vistas</th>
+            <th scope="col">Qué hacer</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row">Fortunas y sueldos</th><td class="num">2,5</td><td class="num">288</td><td><div class="pair" title="Fortunas y sueldos: 21% de las notas y 9% de las vistas"><div class="row"><div class="b notes"><span style="--w:77.1%"></span></div><span class="v">21%</span></div><div class="row"><div class="b views"><span style="--w:34.1%"></span></div><span class="v">9%</span></div></div></td><td><span class="chip down"><svg viewBox="0 0 10 10" aria-hidden="true"><path d="M0 1h10L5 9z"/></svg>Bajar volumen</span></td></tr>
+          <tr><th scope="row">Series, cine y streaming</th><td class="num">1,6</td><td class="num">282</td><td><div class="pair" title="Series, cine y streaming: 14% de las notas y 6% de las vistas"><div class="row"><div class="b notes"><span style="--w:50.1%"></span></div><span class="v">14%</span></div><div class="row"><div class="b views"><span style="--w:22.0%"></span></div><span class="v">6%</span></div></div></td><td><span class="chip down"><svg viewBox="0 0 10 10" aria-hidden="true"><path d="M0 1h10L5 9z"/></svg>Bajar</span></td></tr>
+          <tr><th scope="row">Gadgets y móviles</th><td class="num">1,3</td><td class="num">436</td><td><div class="pair" title="Gadgets y móviles: 11% de las notas y 8% de las vistas"><div class="row"><div class="b notes"><span style="--w:38.6%"></span></div><span class="v">11%</span></div><div class="row"><div class="b views"><span style="--w:28.4%"></span></div><span class="v">8%</span></div></div></td><td><span class="chip up"><svg viewBox="0 0 10 10" aria-hidden="true"><path d="M0 9h10L5 1z"/></svg>Subir</span></td></tr>
+          <tr><th scope="row">Música y conciertos</th><td class="num">0,9</td><td class="num">232</td><td><div class="pair" title="Música y conciertos: 7% de las notas y 2% de las vistas"><div class="row"><div class="b notes"><span style="--w:27.0%"></span></div><span class="v">7%</span></div><div class="row"><div class="b views"><span style="--w:7.5%"></span></div><span class="v">2%</span></div></div></td><td><span class="chip down"><svg viewBox="0 0 10 10" aria-hidden="true"><path d="M0 1h10L5 9z"/></svg>Bajar</span></td></tr>
+          <tr><th scope="row">Eclipses y cielo</th><td class="num">0,8</td><td class="num">308</td><td><div class="pair" title="Eclipses y cielo: 6% de las notas y 11% de las vistas"><div class="row"><div class="b notes"><span style="--w:23.1%"></span></div><span class="v">6%</span></div><div class="row"><div class="b views"><span style="--w:40.9%"></span></div><span class="v">11%</span></div></div></td><td><span class="chip flat"><svg viewBox="0 0 10 10" aria-hidden="true"><circle cx="5" cy="5" r="4"/></svg>Por calendario</span></td></tr>
+          <tr><th scope="row">IA, apps y redes</th><td class="num">0,6</td><td class="num">452</td><td><div class="pair" title="IA, apps y redes: 5% de las notas y 21% de las vistas"><div class="row"><div class="b notes"><span style="--w:19.3%"></span></div><span class="v">5%</span></div><div class="row"><div class="b views"><span style="--w:77.0%"></span></div><span class="v">21%</span></div></div></td><td><span class="chip keep"><svg viewBox="0 0 10 10" aria-hidden="true"><circle cx="5" cy="5" r="4"/></svg>Mantener</span></td></tr>
+          <tr><th scope="row">Lujo, moda y marcas</th><td class="num">0,6</td><td class="num">208</td><td><div class="pair" title="Lujo, moda y marcas: 5% de las notas y 1% de las vistas"><div class="row"><div class="b notes"><span style="--w:19.3%"></span></div><span class="v">5%</span></div><div class="row"><div class="b views"><span style="--w:4.5%"></span></div><span class="v">1%</span></div></div></td><td><span class="chip down"><svg viewBox="0 0 10 10" aria-hidden="true"><path d="M0 1h10L5 9z"/></svg>Bajar</span></td></tr>
+          <tr><th scope="row">Premios y ganadores</th><td class="num">0,6</td><td class="num">148</td><td><div class="pair" title="Premios y ganadores: 5% de las notas y 1% de las vistas"><div class="row"><div class="b notes"><span style="--w:19.3%"></span></div><span class="v">5%</span></div><div class="row"><div class="b views"><span style="--w:4.4%"></span></div><span class="v">1%</span></div></div></td><td><span class="chip down"><svg viewBox="0 0 10 10" aria-hidden="true"><path d="M0 1h10L5 9z"/></svg>Bajar</span></td></tr>
+          <tr><th scope="row">Relojes</th><td class="num">0,6</td><td class="num">1.417</td><td><div class="pair" title="Relojes: 5% de las notas y 27% de las vistas"><div class="row"><div class="b notes"><span style="--w:19.3%"></span></div><span class="v">5%</span></div><div class="row"><div class="b views"><span style="--w:100.0%"></span></div><span class="v">27%</span></div></div></td><td><span class="chip up"><svg viewBox="0 0 10 10" aria-hidden="true"><path d="M0 9h10L5 1z"/></svg>Subir</span></td></tr>
+          <tr><th scope="row">Viajes y destinos</th><td class="num">0,5</td><td class="num">429</td><td><div class="pair" title="Viajes y destinos: 4% de las notas y 3% de las vistas"><div class="row"><div class="b notes"><span style="--w:15.4%"></span></div><span class="v">4%</span></div><div class="row"><div class="b views"><span style="--w:12.6%"></span></div><span class="v">3%</span></div></div></td><td><span class="chip up"><svg viewBox="0 0 10 10" aria-hidden="true"><path d="M0 9h10L5 1z"/></svg>Subir</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="plan">
+      <div>
+        <h3><span class="chip down"><svg viewBox="0 0 10 10" aria-hidden="true"><path d="M0 1h10L5 9z"/></svg>Menos</span>unas 4 notas por semana</h3>
+        <ul>
+          <li>Fortunas de personajes poco buscados: magnates desconocidos y cumpleaños menores.</li>
+          <li>Series y streaming de industria: acuerdos, inversiones y anuncios de plataformas.</li>
+          <li>Música, premios menores y lujo sin precio ni ranking.</li>
+        </ul>
+      </div>
+      <div>
+        <h3><span class="chip up"><svg viewBox="0 0 10 10" aria-hidden="true"><path d="M0 9h10L5 1z"/></svg>Más</span>en los mismos espacios</h3>
+        <ul>
+          <li>Relojes: dos por semana, con historia (aniversario, película o colaboración) y precio.</li>
+          <li>Rankings con un país latinoamericano: al menos uno por semana.</li>
+          <li>Tecnología retro y lanzamientos con precio y dónde comprar.</li>
+          <li>El tutorial de la tendencia del día, cuando Google Trends confirme que ya se busca.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="s-cal">
+    <div class="sec-head">
+      <p class="eyebrow">Calendario</p>
+      <h2 id="s-cal">Hasta febrero de 2027</h2>
+      <p>Fechas confirmadas por los organizadores, cada una con la nota equivalente del año pasado como referencia. En eventos programados la búsqueda despega el mismo día: conviene revisar Google Trends antes de publicar.</p>
+    </div>
+    <ol class="cal">
+      <li>
+        <div class="when">25 sep<small>EA FC 27 sale en todo el mundo</small></div>
+        <div class="what">
+          <h3>El lanzamiento de EA FC 27</h3>
+          <p class="pitch">EA FC 27 ya está disponible: cuánto cuesta en México, Colombia, Argentina y Chile</p>
+          <p>Actualizar la nota del 17 de septiembre el mismo día: Google ya muestra la fecha, así que el valor está en el precio por país.</p>
+        </div>
+        <div class="bench"><span class="prio"><svg viewBox="0 0 12 12" aria-hidden="true"><circle cx="6" cy="6" r="5" fill="currentColor"/></svg>Prioridad alta</span><span>Nota del 17 de septiembre: <b>555</b> vistas en 3 días y <b>99.451</b> impresiones en Search</span><span>«cuando sale fc 27»: <b>7.826</b> impresiones con 0,08% de CTR</span></div>
+      </li>
+      <li>
+        <div class="when">Sep – oct<small>según confirme Apple cada país</small></div>
+        <div class="what">
+          <h3>iPhone 18 Pro y iPhone Duo en América Latina</h3>
+          <p class="pitch">¿Cuándo llegan el iPhone 18 Pro y el iPhone Duo a México, Colombia, Argentina y Chile, y cuánto cuestan?</p>
+          <p>Coordinar con Tecnología para no publicar dos veces lo mismo.</p>
+        </div>
+        <div class="bench"><span class="prio"><svg viewBox="0 0 12 12" aria-hidden="true"><circle cx="6" cy="6" r="5" fill="currentColor"/></svg>Prioridad alta</span><span>iPhone 17, misma nota en 2025: <b>6.825</b> vistas</span><span>«iphone duo»: <b>6.785</b> impresiones en 4 semanas, posición 2,7</span></div>
+      </li>
+      <li>
+        <div class="when">5–12 oct<small>Premios Nobel 2026</small></div>
+        <div class="what">
+          <h3>El dinero del Nobel</h3>
+          <p class="pitch">¿Cuánto dinero reciben los ganadores del Nobel 2026?</p>
+          <p>Si gana alguien de América Latina, nota propia el mismo día. El Nobel de la Paz se anuncia el 9 de octubre.</p>
+        </div>
+        <div class="bench"><span class="prio"><svg viewBox="0 0 12 12" aria-hidden="true"><circle cx="6" cy="6" r="5" fill="currentColor"/></svg>Prioridad alta</span><span>María Corina Machado, 2025: <b>5.266</b> vistas</span><span>Premios con el dinero en el titular, en el año: mediana <b>1.358</b></span></div>
+      </li>
+      <li>
+        <div class="when">26 oct<small>Balón de Oro, Londres</small></div>
+        <div class="what">
+          <h3>Sueldo del ganador</h3>
+          <p class="pitch">[Ganador] del Balón de Oro: cuánto gana al año, mes, día, hora y minuto</p>
+          <p>El formato de sueldo rinde más que la fortuna del ganador.</p>
+        </div>
+        <div class="bench"><span class="prio"><svg viewBox="0 0 12 12" aria-hidden="true"><circle cx="6" cy="6" r="4.5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M6 1.5a4.5 4.5 0 0 1 0 9z" fill="currentColor"/></svg>Prioridad media</span><span>Sueldo de Mbappé: <b>373</b> clics de Search en los últimos 2 meses</span><span>Fortuna del Balón de Oro 2025: <b>360</b> vistas</span></div>
+      </li>
+      <li>
+        <div class="when">31 oct<small>Halloween</small></div>
+        <div class="what">
+          <h3>Actualizar el ranking de terror</h3>
+          <p class="pitch">Las 10 películas de terror más taquilleras de la historia para ver en Halloween</p>
+          <p>Actualizar la nota de 2025 con cifras nuevas en lugar de escribir otra.</p>
+        </div>
+        <div class="bench"><span class="prio"><svg viewBox="0 0 12 12" aria-hidden="true"><circle cx="6" cy="6" r="4.5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M6 1.5a4.5 4.5 0 0 1 0 9z" fill="currentColor"/></svg>Prioridad media</span><span>Versión 2025: <b>42</b> clics de Search entre julio y septiembre, fuera de temporada</span></div>
+      </li>
+      <li>
+        <div class="when">12 y 19 nov<small>GTA 6: precarga y lanzamiento</small></div>
+        <div class="what">
+          <h3>GTA 6 llega a PS5 y Xbox Series</h3>
+          <p class="pitch">GTA 6: precio en México, Colombia, Argentina y Chile, y a qué hora se podrá jugar</p>
+          <p>La búsqueda ya existe y hoy cae en notas sobre el adelanto en Netflix que no la responden.</p>
+        </div>
+        <div class="bench"><span class="prio"><svg viewBox="0 0 12 12" aria-hidden="true"><circle cx="6" cy="6" r="5" fill="currentColor"/></svg>Prioridad alta</span><span>«gta 6»: <b>12.677</b> impresiones en 4 semanas, posición 1,6</span><span>Adelanto en Netflix, agosto: <b>383</b> vistas en 7 días</span></div>
+      </li>
+      <li>
+        <div class="when">12 nov<small>Latin Grammy, Las Vegas</small></div>
+        <div class="what">
+          <h3>Solo si hay un ángulo de dinero</h3>
+          <p>El «cuándo y dónde ver» de 2025 casi no se leyó. Si un ganador latinoamericano genera búsqueda, cubrir su fortuna o su negocio.</p>
+        </div>
+        <div class="bench"><span class="prio"><svg viewBox="0 0 12 12" aria-hidden="true"><circle cx="6" cy="6" r="4.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>Prioridad baja</span><span>Cuándo y dónde ver, 2025: <b>229</b> vistas</span><span>Premios en estas 8 semanas: mediana <b>148</b></span></div>
+      </li>
+      <li>
+        <div class="when">24 nov<small>Miss Universo, San Juan de Puerto Rico</small></div>
+        <div class="what">
+          <h3>Hora del certamen y premio de la ganadora</h3>
+          <p class="pitch">Miss Universo 2026: a qué hora es y cómo verlo desde América Latina</p>
+          <p>Al día siguiente: ¿cuánto dinero se lleva la ganadora de Miss Universo 2026?</p>
+        </div>
+        <div class="bench"><span class="prio"><svg viewBox="0 0 12 12" aria-hidden="true"><circle cx="6" cy="6" r="5" fill="currentColor"/></svg>Prioridad alta</span><span>Fecha y hora, 2025: <b>3.095</b> vistas</span><span>Dinero de la ganadora, 2025: <b>1.481</b></span></div>
+      </li>
+      <li>
+        <div class="when">27 nov<small>Black Friday y Buen Fin</small></div>
+        <div class="what">
+          <h3>No priorizar las fechas de compras</h3>
+          <p>Las notas de «cuándo es» del año pasado quedaron entre las menos leídas.</p>
+        </div>
+        <div class="bench"><span class="prio"><svg viewBox="0 0 12 12" aria-hidden="true"><circle cx="6" cy="6" r="4.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>Prioridad baja</span><span>Black Friday 2025: <b>242</b> · Buen Fin 2025: <b>443</b></span></div>
+      </li>
+      <li>
+        <div class="when">10 dic<small>The Game Awards</small></div>
+        <div class="what">
+          <h3>Hora de la gala desde América Latina</h3>
+          <p class="pitch">¿A qué hora son los Game Awards 2026 y cómo verlos desde México, Colombia y Argentina?</p>
+        </div>
+        <div class="bench"><span class="prio"><svg viewBox="0 0 12 12" aria-hidden="true"><circle cx="6" cy="6" r="5" fill="currentColor"/></svg>Prioridad alta</span><span>Misma nota en 2025: <b>2.758</b> vistas</span></div>
+      </li>
+      <li>
+        <div class="when">Mediados de dic<small>cierre de año</small></div>
+        <div class="what">
+          <h3>Los mejores relojes de lujo de 2026</h3>
+          <p class="pitch">Los mejores relojes de lujo de 2026: [marcas] marcaron el ritmo, según expertos</p>
+          <p>En la última semana del año, propósitos 2027 con fuente experta.</p>
+        </div>
+        <div class="bench"><span class="prio"><svg viewBox="0 0 12 12" aria-hidden="true"><circle cx="6" cy="6" r="5" fill="currentColor"/></svg>Prioridad alta</span><span>Relojes del año, 2025: <b>5.329</b> vistas</span><span>Relojes en estas 8 semanas: mediana <b>1.589</b> en 7 días</span></div>
+      </li>
+      <li>
+        <div class="when">Enero 2027<small>al salir cada ranking</small></div>
+        <div class="what">
+          <h3>Rankings 2027 con América Latina</h3>
+          <p class="pitch">Pasaportes más poderosos, ciudades más seguras y mejores países para jubilarse en 2027</p>
+          <p>Nota nueva por ranking y enlace desde la versión 2026, que sigue recibiendo búsquedas.</p>
+        </div>
+        <div class="bench"><span class="prio"><svg viewBox="0 0 12 12" aria-hidden="true"><circle cx="6" cy="6" r="5" fill="currentColor"/></svg>Prioridad alta</span><span>Pasaportes 2026: <b>230</b> clics de Search en los últimos 2 meses</span><span>Ciudades con mejor calidad de vida en Latinoamérica: <b>235</b></span></div>
+      </li>
+      <li>
+        <div class="when">6 feb 2027<small>Eclipse anular</small></div>
+        <div class="what">
+          <h3>El «anillo de fuego» sobre el sur del continente</h3>
+          <p class="pitch">¿A qué hora es el eclipse anular del 6 de febrero y desde dónde se verá en Chile, Argentina, Uruguay y Brasil?</p>
+          <p>Poner la hora de cada país en el texto y en los subtítulos: en agosto la búsqueda más grande pedía la hora en Venezuela.</p>
+        </div>
+        <div class="bench"><span class="prio"><svg viewBox="0 0 12 12" aria-hidden="true"><circle cx="6" cy="6" r="5" fill="currentColor"/></svg>Prioridad alta</span><span>Eclipse del 12 de agosto de 2026: <b>4.661</b> y <b>3.045</b> vistas en 7 días</span><span>Las dos notas: <b>7.959</b> clics de Search</span></div>
+      </li>
+    </ol>
+  </section>
+
+  <section aria-labelledby="s-ever">
+    <div class="sec-head">
+      <p class="eyebrow">Búsquedas</p>
+      <h2 id="s-ever">Notas viejas que siguen trabajando</h2>
+      <p>Publicadas antes del 20 de julio y con clics de búsqueda entre el 20 de julio y el 19 de septiembre. Actualizarlas cuesta menos que escribir de cero y conserva la posición.</p>
+    </div>
+    <div class="table-wrap">
+      <table class="t-ever" aria-label="Notas con tráfico de búsqueda sostenido">
+        <thead>
+          <tr>
+            <th scope="col">Nota</th>
+            <th scope="col">Publicada</th>
+            <th scope="col" class="num">Clics de Search</th>
+            <th scope="col" class="num">Impresiones</th>
+            <th scope="col">Qué hacer</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td class="title-cell">Así es el Falcon Supernova, el teléfono móvil más caro del mundo</td><td>ago 2025</td><td class="num">1.285</td><td class="num">71.024</td><td>Actualizar precio y disponibilidad: es la nota vieja con más clics de búsqueda.</td></tr>
+          <tr><td class="title-cell">El dinero que gana Elon Musk por año, mes, día, hora y minuto</td><td>feb 2025</td><td class="num">1.190</td><td class="num">92.246</td><td>Actualizar las cifras a 2026 y enlazarla desde notas nuevas de Musk.</td></tr>
+          <tr><td class="title-cell">La fortuna de Shakira en 2026: ¿cuánto dinero tiene la superestrella?</td><td>feb 2026</td><td class="num">935</td><td class="num">82.814</td><td>Enlazarla desde las notas de su gira en España y actualizar la cifra.</td></tr>
+          <tr><td class="title-cell">Top 10 de marcas de lujo silencioso para tener en cuenta en 2025</td><td>mar 2025</td><td class="num">512</td><td class="num">27.410</td><td>Hacer la versión 2026 y enlazarla desde esta; sigue pendiente desde el brief anterior.</td></tr>
+          <tr><td class="title-cell">El sueldo de Mbappé al año, mes, día, hora y minuto</td><td>feb 2025</td><td class="num">373</td><td class="num">74.478</td><td>Actualizar cifras y año: muchas impresiones y 0,5% de CTR.</td></tr>
+          <tr><td class="title-cell">La fortuna de Novak Djokovic en 2026: ¿cuánto dinero tiene el mayor tenista del mundo?</td><td>ene 2026</td><td class="num">367</td><td class="num">10.625</td><td>Actualizar la cifra; rankea en posición 3,1.</td></tr>
+          <tr><td class="title-cell">De Tom Holland a Zendaya: las fortunas de los protagonistas de “La Odisea”</td><td>jul 2026</td><td class="num">352</td><td class="num">25.146</td><td>Enlazarla desde las notas de taquilla y del estreno en streaming.</td></tr>
+          <tr><td class="title-cell">¿Dónde vive Lionel Messi en Miami, Florida?</td><td>oct 2024</td><td class="num">315</td><td class="num">47.970</td><td>Actualizar con el valor de la casa en 2026 y enlazarla desde notas de Messi.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note">Aparte: «Messi vs. Cristiano Ronaldo: así invierten sus millonarias fortunas en 2026» tuvo 103.180 impresiones con 0,24% de CTR. Es la nota vieja con más impresiones y la que más pide un título nuevo.</p>
+
+    <div class="sec-head" style="margin-top: 40px;">
+      <h2 style="font-size: clamp(22px, 2.6vw, 27px); max-width: none;">Búsquedas que ya piden una nota</h2>
+      <p>Consultas con muchas impresiones y pocos clics en las páginas de la sección, del 22 de agosto al 19 de septiembre de 2026.</p>
+    </div>
+    <div class="table-wrap">
+      <table class="t-gsc" aria-label="Oportunidades en Search Console">
+        <thead>
+          <tr>
+            <th scope="col">Consulta</th>
+            <th scope="col" class="num">Impresiones</th>
+            <th scope="col" class="num">Posición</th>
+            <th scope="col" class="num">CTR</th>
+            <th scope="col">Qué hacer</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row">cuando sale fc 27</th><td class="num">7.826</td><td class="num">4,5</td><td class="num">0,08%</td><td>El juego sale el 25 de septiembre. Actualizar ese día la nota del 17 con el precio por país: Google ya muestra la fecha.</td></tr>
+          <tr><th scope="row">la captura netflix</th><td class="num">22.511</td><td class="num">7,7</td><td class="num">1,0%</td><td>Nota de servicio: de qué trata y qué hay de real en la película. Hoy la búsqueda cae en una nota de análisis.</td></tr>
+          <tr><th scope="row">reloj rolex</th><td class="num">6.901</td><td class="num">5,1</td><td class="num">0,04%</td><td>Guía de precios de Rolex en 2026, del más barato al más caro, en dólares y moneda local. Hoy responden notas de 2025 sobre platino y diamantes.</td></tr>
+          <tr><th scope="row">gta 6</th><td class="num">12.677</td><td class="num">1,6</td><td class="num">2,7%</td><td>Nota de lanzamiento del 19 de noviembre con precio y hora por país (ver calendario).</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section aria-labelledby="s-stop">
+    <div class="sec-head">
+      <p class="eyebrow">Recortes</p>
+      <h2 id="s-stop">Qué dejar de publicar</h2>
+    </div>
+    <ul class="stop">
+      <li><h3>Premios menores y listas de nominados</h3><p>Nominados a Premios Juventud (69), nominados a los MTV VMAs (148) y ganadores de Premios Juventud (166) en su primera semana. Solo rindió la hora de la transmisión (390).</p></li>
+      <li><h3>Streaming de industria</h3><p>Netflix y «The Walking Dead» (309), la inversión de Prime Video en la región (246), Netflix y el PIB de México (186) y el documental de Matthew Perry (69).</p></li>
+      <li><h3>Subastas de objetos de famosos</h3><p>El balón de Maradona (107), el jersey de Jordan (91) y el vestido de Diana (268) en su primera semana.</p></li>
+      <li><h3>Música sin cifra</h3><p>8 notas de música, con mediana de 239 en su primera semana; ninguna llegó a 500.</p></li>
+      <li><h3>Fortunas de personajes poco buscados</h3><p>Herbie Wertheim (208), Rupert Grint (133) y Antonio Banderas (131) en su primera semana. La fortuna rinde cuando el personaje ya se busca: Dolly Parton el día de su muerte (846), Daniel Radcliffe en su cumpleaños (837).</p></li>
+      <li><h3>Lujo sin precio ni ranking</h3><p>Hermès y la carne de cerdo en China (150), Samsonite y BÉIS (208). Con ranking: las marcas de lujo más buscadas de segunda mano (411).</p></li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>Fuentes. Google Analytics 4, informe Páginas y pantallas con la fecha como dimensión secundaria, vistas del 20 de julio al 19 de septiembre de 2026 en rutas con /estilo-de-vida/; se excluyeron las notas del sitio en portugués que comparten la ruta. Cada nota se mide por sus vistas del día de publicación y los 6 siguientes (hora de Bogotá). Search Console: clics por página en Search y Discover del 20 de julio al 19 de septiembre, y consultas del 22 de agosto al 19 de septiembre. El índice de 12 meses sale del brief del 14 de septiembre (notas de septiembre de 2025 a agosto de 2026, vistas acumuladas). Cada nota se asigna a un tema según su titular.</p>
+    <p>Fechas de eventos: <a href="https://www.nobelprize.org/press-release/the-2026-nobel-prize-announcements/">Premios Nobel</a> · <a href="https://www.uefa.com/ballondor/news/02a5-20bba5196317-e0e34001e13b-1000--2026-ballon-d-or-ceremony-date-and-host-city-announced/">Balón de Oro</a> · <a href="https://www.latingrammy.com/en/news/the-latin-recording-academy-announces-new-eligibility-guidelines-for-the-27th-annual-latin-grammy-awards-set-to-take-place-on-nov-12/">Latin Grammy</a> · <a href="https://www.forbes.com/sites/brianmazique/2026/05/12/grand-theft-auto-6-release-date-and-everything-confirmed/">GTA 6</a> · <a href="https://en.wikipedia.org/wiki/Miss_Universe_2026">Miss Universo</a> · <a href="https://thegameawards.com/news/tga-returns-december-10-2026">The Game Awards</a> · <a href="https://www.space.com/stargazing/solar-eclipses/annular-solar-eclipse-2027-everything-you-need-to-know-about-the-ring-of-fire-on-feb-6">Eclipse anular de 2027</a> · <a href="https://www.bloomberglinea.com/estilo-de-vida/cuando-sale-ea-fc-27-y-cuanto-costara-el-nuevo-juego-de-futbol/">EA FC 27</a></p>
+    <p>Impacto de las propuestas: Slack de Bloomberg Línea: DM de SEO con Isaac Garrido (24 de agosto a 15 de septiembre) y canal #lifestyle (12 de agosto a 21 de septiembre). Google Analytics 4 («All Sites GA4 Nuevo»), informe Páginas y pantallas por fecha, del 20 de julio al 20 de septiembre de 2026, rutas con /estilo-de-vida/ (194.361 vistas, cuadradas contra el total del informe) y, para Tecnología, rutas con /tecnologia/ del 26 de agosto al 20 de septiembre. Autor y fecha de cada nota: datos estructurados de la propia página.</p>
+  </footer>
+</div>
+
+<script>
+(() => {
+  const DATA = [{"d":"2026-07-20","e":0,"ra":0,"o":1317},{"d":"2026-07-21","e":0,"ra":0,"o":1321},{"d":"2026-07-22","e":0,"ra":0,"o":1876},{"d":"2026-07-23","e":0,"ra":0,"o":2249},{"d":"2026-07-24","e":0,"ra":0,"o":1148},{"d":"2026-07-25","e":0,"ra":0,"o":882},{"d":"2026-07-26","e":0,"ra":0,"o":844},{"d":"2026-07-27","e":0,"ra":0,"o":1341},{"d":"2026-07-28","e":0,"ra":0,"o":1037},{"d":"2026-07-29","e":0,"ra":0,"o":978},{"d":"2026-07-30","e":0,"ra":0,"o":1474},{"d":"2026-07-31","e":0,"ra":0,"o":924},{"d":"2026-08-01","e":0,"ra":0,"o":1107},{"d":"2026-08-02","e":0,"ra":0,"o":13368},{"d":"2026-08-03","e":0,"ra":0,"o":5048},{"d":"2026-08-04","e":0,"ra":0,"o":1415},{"d":"2026-08-05","e":0,"ra":0,"o":971},{"d":"2026-08-06","e":0,"ra":0,"o":1575},{"d":"2026-08-07","e":0,"ra":0,"o":1046},{"d":"2026-08-08","e":0,"ra":0,"o":987},{"d":"2026-08-09","e":0,"ra":0,"o":1659},{"d":"2026-08-10","e":0,"ra":0,"o":1172},{"d":"2026-08-11","e":0,"ra":0,"o":5175},{"d":"2026-08-12","e":0,"ra":0,"o":4282},{"d":"2026-08-13","e":0,"ra":0,"o":1927},{"d":"2026-08-14","e":0,"ra":0,"o":1970},{"d":"2026-08-15","e":0,"ra":0,"o":1676},{"d":"2026-08-16","e":0,"ra":0,"o":1358},{"d":"2026-08-17","e":0,"ra":0,"o":1527},{"d":"2026-08-18","e":0,"ra":0,"o":1208},{"d":"2026-08-19","e":0,"ra":0,"o":844},{"d":"2026-08-20","e":0,"ra":82,"o":1412},{"d":"2026-08-21","e":0,"ra":125,"o":1039},{"d":"2026-08-22","e":0,"ra":39,"o":5811},{"d":"2026-08-23","e":0,"ra":92,"o":2560},{"d":"2026-08-24","e":0,"ra":157,"o":1350},{"d":"2026-08-25","e":159,"ra":397,"o":1241},{"d":"2026-08-26","e":548,"ra":431,"o":1042},{"d":"2026-08-27","e":259,"ra":372,"o":1423},{"d":"2026-08-28","e":72,"ra":92,"o":1381},{"d":"2026-08-29","e":26,"ra":41,"o":1513},{"d":"2026-08-30","e":50,"ra":19,"o":1743},{"d":"2026-08-31","e":25,"ra":28,"o":1659},{"d":"2026-09-01","e":15,"ra":531,"o":1203},{"d":"2026-09-02","e":5,"ra":286,"o":934},{"d":"2026-09-03","e":9,"ra":367,"o":1467},{"d":"2026-09-04","e":4,"ra":205,"o":850},{"d":"2026-09-05","e":7,"ra":242,"o":986},{"d":"2026-09-06","e":3,"ra":372,"o":2000},{"d":"2026-09-07","e":5822,"ra":104,"o":936},{"d":"2026-09-08","e":6398,"ra":136,"o":694},{"d":"2026-09-09","e":1331,"ra":94,"o":982},{"d":"2026-09-10","e":424,"ra":221,"o":1221},{"d":"2026-09-11","e":178,"ra":129,"o":922},{"d":"2026-09-12","e":75,"ra":122,"o":675},{"d":"2026-09-13","e":57,"ra":101,"o":853},{"d":"2026-09-14","e":68,"ra":389,"o":879},{"d":"2026-09-15","e":182,"ra":156,"o":1015},{"d":"2026-09-16","e":1204,"ra":65,"o":719},{"d":"2026-09-17","e":5416,"ra":252,"o":1480},{"d":"2026-09-18","e":4902,"ra":85,"o":1552},{"d":"2026-09-19","e":1279,"ra":40,"o":1588},{"d":"2026-09-20","e":296,"ra":151,"o":1280}];
+  const EVENTS = [{"d":"2026-08-20","n":1,"t":"Primera revisión de un titular de Isaac en #lifestyle."},{"d":"2026-08-25","n":2,"t":"Reunión con Isaac. Ese día SEO propone las puntas de Dolly Parton: la fortuna y el esposo."},{"d":"2026-09-07","n":3,"t":"Propone la foto de los 80 en ChatGPT y, en Tecnología, el horario del Apple Event."},{"d":"2026-09-14","n":4,"t":"Le comparte el brief de la sección con los temas que rinden."},{"d":"2026-09-15","n":5,"t":"Le propone el Nokia 1100 por DM; la nota sale al día siguiente."}];
+  const MES = ['ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic'];
+  const box = document.getElementById('chart');
+  const tip = document.getElementById('tip');
+  const nf = n => String(Math.round(n)).replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+  const dt = s => { const [y, m, d] = s.split('-').map(Number); return new Date(Date.UTC(y, m - 1, d)); };
+  const lab = s => { const t = dt(s); return t.getUTCDate() + ' ' + MES[t.getUTCMonth()]; };
+  const css = v => getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+  const tot = DATA.map(p => p.e + p.ra + p.o);
+  const ma = tot.map((v, i) => i < 6 ? null : tot.slice(i - 6, i + 1).reduce((a, b) => a + b, 0) / 7);
+  let geo = null;
+
+  function draw() {
+    const W = Math.max(box.clientWidth, 280);
+    const H = W < 600 ? 300 : 380;
+    const m = { l: W < 600 ? 40 : 50, r: 12, t: 34, b: 30 };
+    const iw = W - m.l - m.r, ih = H - m.t - m.b, n = DATA.length;
+    const step = 3000, ymax = Math.ceil(Math.max(...tot) / step) * step;
+    const x = i => m.l + i * (iw / (n - 1));
+    const y = v => m.t + ih - (v / ymax) * ih;
+    const area = (lo, hi) => {
+      let s = '';
+      for (let i = 0; i < n; i++) s += (i ? 'L' : 'M') + x(i).toFixed(1) + ',' + y(hi[i]).toFixed(1);
+      for (let i = n - 1; i >= 0; i--) s += 'L' + x(i).toFixed(1) + ',' + y(lo[i]).toFixed(1);
+      return s + 'Z';
+    };
+    const zero = DATA.map(() => 0), o = DATA.map(p => p.o), ora = DATA.map(p => p.o + p.ra);
+    const surf = css('--surface'), ink = css('--ink'), ink2 = css('--ink-2'), rule = css('--rule');
+    let g = '';
+    for (let v = 0; v <= ymax; v += step) {
+      g += `<line x1="${m.l}" x2="${W - m.r}" y1="${y(v)}" y2="${y(v)}" stroke="${rule}" stroke-width="1"/>`;
+      g += `<text class="tick" x="${m.l - 8}" y="${y(v) + 4}" text-anchor="end">${v === 0 ? '0' : (v / 1000) + ' mil'}</text>`;
+    }
+    DATA.forEach((p, i) => {
+      if (dt(p.d).getUTCDay() === 1 && (W >= 600 || i % 14 === 0)) {
+        g += `<line x1="${x(i)}" x2="${x(i)}" y1="${m.t + ih}" y2="${m.t + ih + 5}" stroke="${ink2}" stroke-width="1"/>`;
+        g += `<text class="tick" x="${x(i)}" y="${m.t + ih + 19}" text-anchor="middle">${lab(p.d)}</text>`;
+      }
+    });
+    g += `<path d="${area(zero, o)}" fill="${css('--c-rest')}" stroke="${surf}" stroke-width="1"/>`;
+    g += `<path d="${area(o, ora)}" fill="${css('--c-rev')}" stroke="${surf}" stroke-width="1"/>`;
+    g += `<path d="${area(ora, tot)}" fill="${css('--c-prop')}" stroke="${surf}" stroke-width="1"/>`;
+    let ml = '';
+    ma.forEach((v, i) => { if (v !== null) ml += (ml ? 'L' : 'M') + x(i).toFixed(1) + ',' + y(v).toFixed(1); });
+    g += `<path d="${ml}" fill="none" stroke="${ink}" stroke-width="2" stroke-linejoin="round" opacity=".8"/>`;
+    const iOm = DATA.findIndex(p => p.d === '2026-08-02');
+    if (iOm >= 0) g += `<text class="anno" x="${x(iOm) + 8}" y="${y(tot[iOm]) + 12}">Omega x Swatch</text>`;
+    const evs = EVENTS.map(e => ({ n: e.n, i: DATA.findIndex(p => p.d === e.d) })).filter(o => o.i >= 0).sort((a, b) => a.i - b.i);
+    evs.forEach((o, k) => { o.cx = x(o.i); if (k && o.cx < evs[k - 1].cx + 23) o.cx = evs[k - 1].cx + 23; });
+    for (let k = evs.length - 1; k >= 0; k--) {
+      const lim = k === evs.length - 1 ? W - 11 : evs[k + 1].cx - 23;
+      if (evs[k].cx > lim) evs[k].cx = lim;
+    }
+    evs.forEach(o => {
+      const lx = x(o.i);
+      g += `<path d="M${lx},${m.t + ih}V${m.t - 2}L${o.cx},${m.t - 10}" fill="none" stroke="${ink2}" stroke-width="1" stroke-dasharray="3 3"/>`;
+      g += `<circle cx="${o.cx}" cy="${m.t - 20}" r="10" fill="${surf}" stroke="${ink}" stroke-width="1.5"/>`;
+      g += `<text class="evnum" x="${o.cx}" y="${m.t - 16}" text-anchor="middle">${o.n}</text>`;
+    });
+    g += `<line id="guide" x1="0" x2="0" y1="${m.t}" y2="${m.t + ih}" stroke="${ink}" stroke-width="1" visibility="hidden"/>`;
+    g += `<rect id="hit" x="${m.l}" y="${m.t}" width="${iw}" height="${ih}" fill="transparent"/>`;
+    box.innerHTML = `<svg width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" aria-hidden="true">${g}</svg>`;
+    geo = { m, iw, ih, n, x, W };
+  }
+
+  function show(ev) {
+    if (!geo) return;
+    const r = box.getBoundingClientRect();
+    const px = ev.clientX - r.left;
+    const i = Math.max(0, Math.min(geo.n - 1, Math.round((px - geo.m.l) / (geo.iw / (geo.n - 1)))));
+    const p = DATA[i], X = geo.x(i);
+    const gl = box.querySelector('#guide');
+    gl.setAttribute('x1', X); gl.setAttribute('x2', X); gl.setAttribute('visibility', 'visible');
+    tip.innerHTML = `<b>${lab(p.d)}</b>` +
+      `<div class="row"><i style="background:var(--c-prop)"></i><span>Propuesta de SEO</span><span>${nf(p.e)}</span></div>` +
+      `<div class="row"><i style="background:var(--c-rev)"></i><span>Revisada por SEO</span><span>${nf(p.ra)}</span></div>` +
+      `<div class="row"><i style="background:var(--c-rest)"></i><span>Resto de la sección</span><span>${nf(p.o)}</span></div>` +
+      `<div class="row tot"><i></i><span>Total del día</span><b>${nf(tot[i])}</b></div>` +
+      (ma[i] !== null ? `<div class="row"><i></i><span>Promedio de 7 días</span><span>${nf(ma[i])}</span></div>` : '');
+    tip.hidden = false;
+    const tw = tip.offsetWidth, cw = box.parentElement.clientWidth;
+    const left = X + 16 + tw > cw ? X - tw - 6 : X + 16;
+    tip.style.transform = `translate(${Math.max(4, left)}px, 20px)`;
+  }
+  function hide() { tip.hidden = true; const gl = box.querySelector('#guide'); if (gl) gl.setAttribute('visibility', 'hidden'); }
+
+  box.addEventListener('pointermove', show);
+  box.addEventListener('pointerdown', show);
+  box.addEventListener('pointerleave', hide);
+  let t = null;
+  new ResizeObserver(() => { clearTimeout(t); t = setTimeout(draw, 80); }).observe(box);
+  new MutationObserver(draw).observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+  try { matchMedia('(prefers-color-scheme: dark)').addEventListener('change', draw); } catch (e) {}
+  draw();
+})();
+</script>
+</body>
+</html>
